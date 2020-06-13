@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg">
+
+    <Button
+        android:id="@+id/micBtn"
+        android:layout_width="82dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/micbtn"
+        android:onClick="getSpeechInput" />
+
+    <TextView
+        android:id="@+id/jawabanTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jawabannya disini"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/soalimg"
+        android:layout_width="173dp"
+        android:layout_height="143dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/kindpng_1450899"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:foreground="@drawable/play"
+        android:text="Button" />
+
+</LinearLayout>

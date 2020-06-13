@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".EditProfilActivity">
+
+
+    <EditText
+        android:id="@+id/textPeringatan"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="100dp"
+        android:hint="Data yang diisi harus lengkap !!!"
+        android:textColor="#000000"
+        android:textColorHint="@color/red" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah username"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textColorHint="#ffffff" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password lama"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:textColorHint="#000000"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password baru"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password baru"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/passwordBaru"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Foto"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/upload_foto"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="Upload foto"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="119dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="80dp"
+
+            android:background="@drawable/button_edit_profil"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/batal"
+            android:layout_width="99dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_batal"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>

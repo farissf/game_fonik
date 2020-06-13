@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:numColumns="3"
+    android:orientation="horizontal"
+    android:paddingLeft="@android:dimen/app_icon_size"
+    android:paddingTop="@android:dimen/app_icon_size"
+    android:paddingRight="@android:dimen/app_icon_size"
+    android:paddingBottom="@android:dimen/app_icon_size"
+    android:visibility="visible"
+    tools:context=".HurufActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="150dp"
+        android:columnCount="3"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp">
+
+        <Button
+            android:id="@+id/aBtn"
+            android:background="@drawable/a"
+            android:tag="a" />
+
+        <Button
+            android:id="@+id/bBtn"
+            android:background="@drawable/b"
+            android:tag="b" />
+
+        <Button
+            android:id="@+id/cBtn"
+            android:background="@drawable/c"
+            android:tag="c" />
+
+        <Button
+            android:id="@+id/dBtn"
+            android:background="@drawable/d"
+            android:tag="d" />
+
+        <Button
+            android:id="@+id/eBtn"
+            android:background="@drawable/e"
+            android:tag="e" />
+
+        <Button
+            android:id="@+id/fBtn"
+            android:background="@drawable/f"
+            android:tag="f" />
+
+        <Button
+            android:id="@+id/gBtn"
+            android:background="@drawable/g"
+            android:tag="g" />
+
+        <Button
+            android:id="@+id/hBtn"
+            android:background="@drawable/h"
+            android:tag="h" />
+
+        <Button
+            android:id="@+id/iBtn"
+            android:background="@drawable/i"
+            android:tag="i" />
+
+        <Button
+            android:id="@+id/jBtn"
+            android:background="@drawable/j"
+            android:tag="j" />
+
+        <Button
+            android:id="@+id/kBtn"
+            android:background="@drawable/k"
+            android:tag="k" />
+
+        <Button
+            android:id="@+id/lBtn"
+            android:background="@drawable/l"
+            android:tag="l" />
+
+        <Button
+            android:id="@+id/mBtn"
+            android:background="@drawable/m"
+            android:tag="m" />
+
+        <Button
+            android:id="@+id/nBtn"
+            android:background="@drawable/n"
+            android:tag="n" />
+
+        <Button
+            android:id="@+id/oBtn"
+            android:background="@drawable/o"
+            android:tag="o" />
+
+        <Button
+            android:id="@+id/pBtn"
+            android:background="@drawable/p"
+            android:tag="p" />
+
+        <Button
+            android:id="@+id/qBtn"
+            android:background="@drawable/q"
+            android:tag="q" />
+
+        <Button
+            android:id="@+id/rBtn"
+            android:background="@drawable/r"
+            android:tag="r" />
+
+        <Button
+            android:id="@+id/sBtn"
+            android:background="@drawable/s"
+            android:tag="s" />
+
+        <Button
+            android:id="@+id/tBtn"
+            android:background="@drawable/t"
+            android:tag="t" />
+
+        <Button
+            android:id="@+id/uBtn"
+            android:background="@drawable/u"
+            android:tag="u" />
+
+        <Button
+            android:id="@+id/vBtn"
+            android:background="@drawable/v"
+            android:tag="v" />
+
+        <Button
+            android:id="@+id/wBtn"
+            android:background="@drawable/w"
+            android:tag="w" />
+
+        <Button
+            android:id="@+id/xBtn"
+            android:background="@drawable/x"
+            android:tag="x" />
+
+        <Button
+            android:id="@+id/yBtn"
+            android:background="@drawable/y"
+            android:tag="y" />
+
+        <Button
+            android:id="@+id/zBtn"
+            android:background="@drawable/z"
+            android:tag="z" />
+
+
+    </GridLayout>
+
+</ScrollView>

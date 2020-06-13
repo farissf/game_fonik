@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Daftar_Activity">
+
+    <ImageView
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo_jabar" />
+
+    <EditText
+        android:id="@+id/textPeringatan"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="0dp"
+        android:hint="Data yang diisi harus lengkap !!!"
+        android:textColor="#000000"
+        android:textColorHint="@color/red" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulangi Password"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/namaLengkap"
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="158dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="60dp"
+        android:background="@null"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/radioJenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki- laki"/>
+            <RadioButton android:id="@+id/perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/tanggal_lahir"
+            android:layout_width="158dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="Pilih tanggal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Foto"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/upload_foto"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="Upload foto"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="77dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="120dp"
+            android:text="daftar"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/batal"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="Batal"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+</LinearLayout>

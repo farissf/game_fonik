@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MusikActivity">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="73dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_kembali" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/drum"
+                android:text="Drum" />
+
+            <Button
+                android:id="@+id/gitar"
+                android:text="Gitar" />
+            <Button
+                android:id="@+id/bass"
+                android:text="Bass" />
+
+            <Button
+                android:id="@+id/flute"
+                android:text="Flute" />
+            <Button
+                android:id="@+id/piano"
+                android:text="Piano" />
+            <Button
+                android:id="@+id/suling"
+                android:text="Suling" />
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

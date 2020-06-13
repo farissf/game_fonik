@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".BinatangActivity">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="73dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_kembali" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:orientation="horizontal">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/anjing"
+                android:text="Anjing" />
+
+            <Button
+                android:id="@+id/ayam"
+                android:text="Ayam" />
+
+            <Button
+                android:id="@+id/bebek"
+                android:text="Bebek" />
+
+            <Button
+                android:id="@+id/elang"
+                android:text="Elang" />
+
+            <Button
+                android:id="@+id/kambing"
+                android:text="Kambing" />
+
+            <Button
+                android:id="@+id/katak"
+                android:text="Katak" />
+
+            <Button
+                android:id="@+id/kucing"
+                android:text="Kucing" />
+
+            <Button
+                android:id="@+id/kuda"
+                android:text="Kuda" />
+
+            <Button
+                android:id="@+id/babi"
+                android:text="Babi" />
+
+            <Button
+                android:id="@+id/gajah"
+                android:text="Gajah" />
+
+            <Button
+                android:id="@+id/monyet"
+                android:text="Monyet" />
+
+            <Button
+                android:id="@+id/sapi"
+                android:text="Sapi" />
+
+            <Button
+                android:id="@+id/serigala"
+                android:text="Serigala" />
+
+            <Button
+                android:id="@+id/ular"
+                android:text="Ular" />
+
+            <Button
+                android:id="@+id/singa"
+                android:text="Singa" />
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
