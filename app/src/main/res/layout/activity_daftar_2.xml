@@ -8,8 +8,8 @@
     tools:context=".Daftar_Activity">
 
     <ImageView
-        android:layout_width="162dp"
-        android:layout_height="48dp"
+        android:layout_width="176dp"
+        android:layout_height="70dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/logo_jabar" />
@@ -199,13 +199,19 @@
 
         <Button
             android:id="@+id/upload_foto"
-            android:layout_width="160dp"
+            android:layout_width="87dp"
             android:layout_height="40dp"
             android:layout_marginLeft="30dp"
             android:text="Upload foto"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="71dp"
+            android:layout_height="40dp" />
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_marginTop="10dp"
