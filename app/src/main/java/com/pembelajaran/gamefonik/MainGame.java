@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Objects;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 public class MainGame extends Activity {
     private TextView jawabanTxt;
     TextView soal;
@@ -51,162 +53,354 @@ public class MainGame extends Activity {
         assert data != null;
         switch (data) {
             case "a":
-                soal.setBackgroundResource(R.drawable.soal_a);
-                Button soal_a = this.findViewById(R.id.suaraBtn);
-                soal_a.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View arg0) {
-                        playSound(1);
-                    }
+                soal.setBackgroundResource(R.drawable.a);
+                Button a = this.findViewById(R.id.suaraBtn);
+                a.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View arg0) {
+                    playSound(1);
+                }
+                });
+                Button ainfo = findViewById(R.id.infoBtn);
+                ainfo.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                        .setTitleText("Gambar Pengucapan")
+                        .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                        .setCustomImage(R.drawable.soal_a)
+                        .show();
+                }
                 });
                 break;
             case "b":
-                soal.setBackgroundResource(R.drawable.soal_b);
-                Button soal_b = this.findViewById(R.id.suaraBtn);
-                soal_b.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.b);
+                Button b = this.findViewById(R.id.suaraBtn);
+                b.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(2);
                     }
                 });
+                Button binfo = findViewById(R.id.infoBtn);
+                binfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_b)
+                                .show();
+                    }
+                });
                 break;
             case "c":
-                soal.setBackgroundResource(R.drawable.soal_c);
-                Button soal_c = this.findViewById(R.id.suaraBtn);
-                soal_c.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.c);
+                Button c = this.findViewById(R.id.suaraBtn);
+                c.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(3);
                     }
                 });
+                Button cinfo = findViewById(R.id.infoBtn);
+                cinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_c)
+                                .show();
+                    }
+                });
                 break;
             case "d":
-                soal.setBackgroundResource(R.drawable.soal_d);
-                Button soal_d = this.findViewById(R.id.suaraBtn);
-                soal_d.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.d);
+                Button d = this.findViewById(R.id.suaraBtn);
+                d.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(4);
                     }
                 });
+                Button dinfo = findViewById(R.id.infoBtn);
+                dinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_d)
+                                .show();
+                    }
+                });
                 break;
             case "e":
-                soal.setBackgroundResource(R.drawable.soal_e);
-                Button soal_e = this.findViewById(R.id.suaraBtn);
-                soal_e.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.e);
+                Button e = this.findViewById(R.id.suaraBtn);
+                e.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(5);
                     }
                 });
+                Button einfo = findViewById(R.id.infoBtn);
+                einfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_e)
+                                .show();
+                    }
+                });
                 break;
             case "f":
-                soal.setBackgroundResource(R.drawable.soal_f);
-                Button soal_f = this.findViewById(R.id.suaraBtn);
-                soal_f.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.f);
+                Button f = this.findViewById(R.id.suaraBtn);
+                f.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(6);
                     }
                 });
+                Button finfo = findViewById(R.id.infoBtn);
+                finfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_f)
+                                .show();
+                    }
+                });
                 break;
             case "g":
-                soal.setBackgroundResource(R.drawable.soal_g);
-                Button soal_g = this.findViewById(R.id.suaraBtn);
-                soal_g.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.g);
+                Button g = this.findViewById(R.id.suaraBtn);
+                g.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(7);
                     }
                 });
+                Button ginfo = findViewById(R.id.infoBtn);
+                ginfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_g)
+                                .show();
+                    }
+                });
                 break;
             case "h":
-                soal.setBackgroundResource(R.drawable.soal_h);
-                Button soal_h = this.findViewById(R.id.suaraBtn);
-                soal_h.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.h);
+                Button h = this.findViewById(R.id.suaraBtn);
+                h.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(8);
                     }
                 });
+                Button hinfo = findViewById(R.id.infoBtn);
+                hinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_h)
+                                .show();
+                    }
+                });
                 break;
             case "i":
-                soal.setBackgroundResource(R.drawable.soal_i);
-                Button soal_i = this.findViewById(R.id.suaraBtn);
-                soal_i.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.i);
+                Button i = this.findViewById(R.id.suaraBtn);
+                i.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(9);
                     }
                 });
+                Button iinfo = findViewById(R.id.infoBtn);
+                iinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_i)
+                                .show();
+                    }
+                });
                 break;
             case "j":
-                soal.setBackgroundResource(R.drawable.soal_j);
-                Button soal_j = this.findViewById(R.id.suaraBtn);
-                soal_j.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.j);
+                Button j = this.findViewById(R.id.suaraBtn);
+                j.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(10);
                     }
                 });
+                Button jinfo = findViewById(R.id.infoBtn);
+                jinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_j)
+                                .show();
+                    }
+                });
                 break;
             case "k":
-                soal.setBackgroundResource(R.drawable.soal_k);
-                Button soal_k = this.findViewById(R.id.suaraBtn);
-                soal_k.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.k);
+                Button k = this.findViewById(R.id.suaraBtn);
+                k.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(11);
                     }
                 });
+                Button kinfo = findViewById(R.id.infoBtn);
+                kinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_k)
+                                .show();
+                    }
+                });
                 break;
             case "l":
-                soal.setBackgroundResource(R.drawable.soal_l);
-                Button soal_l = this.findViewById(R.id.suaraBtn);
-                soal_l.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.l);
+                Button l = this.findViewById(R.id.suaraBtn);
+                l.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(12);
                     }
                 });
+                Button linfo = findViewById(R.id.infoBtn);
+                linfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_l)
+                                .show();
+                    }
+                });
                 break;
             case "m":
-                soal.setBackgroundResource(R.drawable.soal_m);
-                Button soal_m = this.findViewById(R.id.suaraBtn);
-                soal_m.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.m);
+                Button m = this.findViewById(R.id.suaraBtn);
+                m.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(13);
                     }
                 });
+                Button minfo = findViewById(R.id.infoBtn);
+                minfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_m)
+                                .show();
+                    }
+                });
                 break;
             case "n":
-                soal.setBackgroundResource(R.drawable.soal_n);
-                Button soal_n = this.findViewById(R.id.suaraBtn);
-                soal_n.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.n);
+                Button n = this.findViewById(R.id.suaraBtn);
+                n.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(14);
                     }
                 });
+                Button ninfo = findViewById(R.id.infoBtn);
+                ninfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_n)
+                                .show();
+                    }
+                });
                 break;
             case "o":
-                soal.setBackgroundResource(R.drawable.soal_o);
-                Button soal_o = this.findViewById(R.id.suaraBtn);
-                soal_o.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.o);
+                Button o = this.findViewById(R.id.suaraBtn);
+                o.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(15);
                     }
                 });
+                Button oinfo = findViewById(R.id.infoBtn);
+                oinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_o)
+                                .show();
+                    }
+                });
                 break;
             case "p":
-                soal.setBackgroundResource(R.drawable.soal_p);
-                Button soal_p = this.findViewById(R.id.suaraBtn);
-                soal_p.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.p);
+                Button p = this.findViewById(R.id.suaraBtn);
+                p.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(16);
+                    }
+                });
+                Button pinfo = findViewById(R.id.infoBtn);
+                pinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_p)
+                                .show();
                     }
                 });
                 break;
@@ -219,64 +413,148 @@ public class MainGame extends Activity {
                         playSound(17);
                     }
                 });
+                Button qinfo = findViewById(R.id.infoBtn);
+                qinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.q)
+                                .show();
+                    }
+                });
                 break;
             case "r":
-                soal.setBackgroundResource(R.drawable.soal_r);
-                Button soal_r = this.findViewById(R.id.suaraBtn);
-                soal_r.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.r);
+                Button r = this.findViewById(R.id.suaraBtn);
+                r.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(18);
                     }
                 });
+                Button rinfo = findViewById(R.id.infoBtn);
+                rinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_r)
+                                .show();
+                    }
+                });
                 break;
             case "s":
-                soal.setBackgroundResource(R.drawable.soal_s);
-                Button soal_s = this.findViewById(R.id.suaraBtn);
-                soal_s.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.s);
+                Button s = this.findViewById(R.id.suaraBtn);
+                s.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(19);
                     }
                 });
+                Button sinfo = findViewById(R.id.infoBtn);
+                sinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_s)
+                                .show();
+                    }
+                });
                 break;
             case "t":
-                soal.setBackgroundResource(R.drawable.soal_t);
-                Button soal_t = this.findViewById(R.id.suaraBtn);
-                soal_t.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.t);
+                Button t = this.findViewById(R.id.suaraBtn);
+                t.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(20);
                     }
                 });
+                Button tinfo = findViewById(R.id.infoBtn);
+                tinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_t)
+                                .show();
+                    }
+                });
                 break;
             case "u":
-                soal.setBackgroundResource(R.drawable.soal_u);
-                Button soal_u = this.findViewById(R.id.suaraBtn);
-                soal_u.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.u);
+                Button u = this.findViewById(R.id.suaraBtn);
+                u.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(21);
                     }
                 });
+                Button uinfo = findViewById(R.id.infoBtn);
+                uinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_u)
+                                .show();
+                    }
+                });
                 break;
             case "v":
-                soal.setBackgroundResource(R.drawable.soal_v);
-                Button soal_v = this.findViewById(R.id.suaraBtn);
-                soal_v.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.v);
+                Button v = this.findViewById(R.id.suaraBtn);
+                v.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(22);
                     }
                 });
+                Button vinfo = findViewById(R.id.infoBtn);
+                vinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_v)
+                                .show();
+                    }
+                });
                 break;
             case "w":
-                soal.setBackgroundResource(R.drawable.soal_w);
-                Button soal_w = this.findViewById(R.id.suaraBtn);
-                soal_w.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.w);
+                Button w = this.findViewById(R.id.suaraBtn);
+                w.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(23);
+                    }
+                });
+                Button winfo = findViewById(R.id.infoBtn);
+                winfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_w)
+                                .show();
                     }
                 });
                 break;
@@ -289,6 +567,18 @@ public class MainGame extends Activity {
                         playSound(24);
                     }
                 });
+                Button xinfo = findViewById(R.id.infoBtn);
+                xinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.x)
+                                .show();
+                    }
+                });
                 break;
             case "y":
                 soal.setBackgroundResource(R.drawable.y);
@@ -299,14 +589,38 @@ public class MainGame extends Activity {
                         playSound(25);
                     }
                 });
+                Button yinfo = findViewById(R.id.infoBtn);
+                yinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.y)
+                                .show();
+                    }
+                });
                 break;
             case "z":
-                soal.setBackgroundResource(R.drawable.soal_z);
-                Button soal_z = this.findViewById(R.id.suaraBtn);
-                soal_z.setOnClickListener(new View.OnClickListener() {
+                soal.setBackgroundResource(R.drawable.z);
+                Button z = this.findViewById(R.id.suaraBtn);
+                z.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
                         playSound(26);
+                    }
+                });
+                Button zinfo = findViewById(R.id.infoBtn);
+                zinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_z)
+                                .show();
                     }
                 });
                 break;
@@ -383,7 +697,8 @@ public class MainGame extends Activity {
                 player.stop();
                 player.release();
             }
-        }catch (Exception e){Toast.makeText(this, isPlaying,Toast.LENGTH_LONG).show();
+        }catch (Exception e){
+//            Toast.makeText(this, isPlaying,Toast.LENGTH_LONG).show();
         }
         if(arg == 1){
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
