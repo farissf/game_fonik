@@ -209,9 +209,7 @@
             android:id="@+id/imageView"
             android:layout_width="71dp"
             android:layout_height="40dp" />
-
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_marginTop="10dp"
