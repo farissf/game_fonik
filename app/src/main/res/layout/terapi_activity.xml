@@ -27,10 +27,10 @@
             android:id="@+id/perkembangan"
             android:layout_width="178dp"
             android:layout_height="40dp"
-            android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
-            android:text="Perkembangan Saya"
-            android:onClick="perkembangan" />
+            android:layout_marginTop="5dp"
+            android:onClick="perkembangan"
+            android:text="Perkembangan Saya" />
     </LinearLayout>
 
     <ImageView
@@ -41,6 +41,7 @@
         android:background="@drawable/user_profile" />
 
     <TextView
+        android:id="@+id/namaSiswa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
