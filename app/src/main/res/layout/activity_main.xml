@@ -36,10 +36,12 @@
         android:onClick="carapenggunaan" />
 
     <Button
+        android:id="@+id/keluarBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@drawable/button_keluar" />
+        android:background="@drawable/button_keluar"
+        android:onClick="keluar"/>
 
 
 </LinearLayout>
