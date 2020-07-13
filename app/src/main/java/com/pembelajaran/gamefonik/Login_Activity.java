@@ -70,7 +70,12 @@ public class Login_Activity extends AppCompatActivity {
                     pDialog.setContentText("Username atau password salah");
                     pDialog.setCancelable(false);
                     pDialog.show();
-//                    Toast.makeText(Login_Activity.this, "Login Gagal!",Toast.LENGTH_SHORT).show();
+                    pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                        @Override
+                        public void onClick(SweetAlertDialog sweetAlertDialog) {
+                            sweetAlertDialog.dismissWithAnimation();
+                        }
+                    });
                 }
             }
         });
