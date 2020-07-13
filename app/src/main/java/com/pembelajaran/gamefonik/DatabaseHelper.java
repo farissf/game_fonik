@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteStatement;
 import android.text.TextUtils;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
-    public static final String DATABASE_NAME = "gamefonik.sqlite";
+    public static final String DATABASE_NAME = "gamefonik.db";
     public static final String TABLE_NAME = "t_user";
     public static final String COL_ID = "ID";
     public static final String COL_USER = "username";
@@ -47,6 +47,12 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         this.onCreate(db);
     }
 
+    public Cursor LihatData() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("Select * from " + TABLE_NAME, null);
+        return res;
+    }
+
     public Cursor getData(String sql){
         SQLiteDatabase database = getReadableDatabase();
         return database.rawQuery(sql, null);
@@ -78,7 +84,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         statement.bindString(5,jenis_kel);
         statement.bindString(6,tgl_lahir);
         statement.bindBlob(7, foto_profil);
-        statement.bindDouble(8, (double)ID);
+        statement.bindDouble(8, ID);
 
         statement.execute();
         database.close();
@@ -123,4 +129,5 @@ public class DatabaseHelper extends SQLiteOpenHelper{
             return count > 0;
         }
     }
+
 }
