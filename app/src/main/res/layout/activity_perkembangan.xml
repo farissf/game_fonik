@@ -24,6 +24,7 @@
         android:background="@drawable/user_profile" />
 
     <TextView
+        android:id="@+id/namaSiswa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -43,30 +44,28 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/latDengar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Latihan mendengar :" />
 
         <TextView
+            android:id="@+id/latHuruf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Latihan huruf :" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Latihan huruf : " />
-
-        <TextView
+            android:id="@+id/latSukuKata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="Latihan suku kata : " />
 
         <TextView
+            android:id="@+id/latKata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
