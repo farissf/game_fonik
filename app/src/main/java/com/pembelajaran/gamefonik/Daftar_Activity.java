@@ -124,7 +124,7 @@ public class Daftar_Activity extends AppCompatActivity {
                 String almt = alamat.getText().toString().trim();
                 String jenis = jenis_kelamin.getText().toString().trim();
                 String tanggal = tanggal_lahir.getText().toString().trim();
-                String upload = upload_foto.getText().toString().trim();
+//                String upload = upload_foto.getText().toString().trim();
                 byte[] gambar = imageViewToByte(imageView);
                 if (pwd.equals(cnf_pwd)) {
                     long val = db.addUser(user, pwd, nama, almt, jenis, tanggal, gambar);
@@ -133,29 +133,43 @@ public class Daftar_Activity extends AppCompatActivity {
                         pDialog.setTitleText("Peringatan!");
                         pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
                         pDialog.setContentText("Anda telah terdaftar!");
-                        pDialog.setCancelable(false);
+                        pDialog.setCancelable(true);
                         pDialog.show();
-//                        Toast.makeText(Daftar_Activity.this, "Anda telah terdaftar!", Toast.LENGTH_SHORT).show();
-                        Intent intentMoveToLogin = new Intent(Daftar_Activity.this, Login_Activity.class);
-                        startActivity(intentMoveToLogin);
+                        pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                                Intent intentMoveToLogin = new Intent(Daftar_Activity.this, Login_Activity.class);
+                                startActivity(intentMoveToLogin);
+                                sweetAlertDialog.dismissWithAnimation();
+                            }
+                        });
                     } else {
                         SweetAlertDialog pDialog = new SweetAlertDialog(Daftar_Activity.this, SweetAlertDialog.ERROR_TYPE);
                         pDialog.setTitleText("Peringatan!");
                         pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
                         pDialog.setContentText("Pendaftaran gagal!");
-                        pDialog.setCancelable(false);
+                        pDialog.setCancelable(true);
                         pDialog.show();
-//                        Toast.makeText(Daftar_Activity.this, "Pendaftaran gagal!", Toast.LENGTH_SHORT).show();
+                        pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                            @Override
+                            public void onClick(SweetAlertDialog sweetAlertDialog) {
+                                sweetAlertDialog.dismissWithAnimation();
+                            }
+                        });
                     }
                 } else {
                     SweetAlertDialog pDialog = new SweetAlertDialog(Daftar_Activity.this, SweetAlertDialog.ERROR_TYPE);
                     pDialog.setTitleText("Peringatan!");
                     pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
                     pDialog.setContentText("Password tidak sama!");
-                    pDialog.setCancelable(false);
+                    pDialog.setCancelable(true);
                     pDialog.show();
-//                    Toast.makeText(Daftar_Activity.this, "Password tidak sama!", Toast.LENGTH_SHORT).show();
-
+                    pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                        @Override
+                        public void onClick(SweetAlertDialog sweetAlertDialog) {
+                            sweetAlertDialog.dismissWithAnimation();
+                        }
+                    });
                 }
             }
         });
@@ -219,11 +233,11 @@ public class Daftar_Activity extends AppCompatActivity {
         alamat = findViewById(R.id.alamat);
         nama_lengkap = findViewById(R.id.namaLengkap);
         btnDaftar = findViewById(R.id.btnDaftar);
-        tanggal_lahir=(EditText) findViewById(R.id.tanggal_lahir);
+        tanggal_lahir= findViewById(R.id.tanggal_lahir);
         tanggal_lahir.setInputType(InputType.TYPE_NULL);
-        radioJenis = (RadioGroup) findViewById(R.id.radioJenis);
-        imageView = (ImageView) findViewById(R.id.imageView);
-        upload_foto = (Button) findViewById(R.id.upload_foto);
+        radioJenis = findViewById(R.id.radioJenis);
+        imageView = findViewById(R.id.imageView);
+        upload_foto = findViewById(R.id.upload_foto);
     }
 
 }
