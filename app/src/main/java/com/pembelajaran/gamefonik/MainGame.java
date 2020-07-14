@@ -624,18 +624,6 @@ public class MainGame extends Activity {
                     }
                 });
                 break;
-            case "ae":
-                soal.setBackgroundResource(R.drawable.ae);
-                break;
-            case "ai":
-                soal.setBackgroundResource(R.drawable.ai);
-                break;
-            case "ao":
-                soal.setBackgroundResource(R.drawable.ao);
-                break;
-            case "au":
-                soal.setBackgroundResource(R.drawable.au);
-                break;
             case "ea":
                 soal.setBackgroundResource(R.drawable.ea);
                 break;

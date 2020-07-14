@@ -11,28 +11,25 @@ import android.text.TextUtils;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
     public static final String DATABASE_NAME = "gamefonik.db";
-    public static final String TABLE_NAME = "t_user";
-    public static final String COL_ID = "ID";
-    public static final String COL_USER = "username";
-    public static final String COL_PASS = "password";
-    public static final String COL_NAMA_LENGKAP = "nama_lengkap";
-    public static final String COL_ALAMAT = "alamat";
-    public static final String COL_JK = "jenis_kel";
-    public static final String COL_TL = "tgl_lahir";
-    public static final String COL_FOTO = "foto_profil";
+    public static final String TABLE1 = "t_user";
+    public static final String TABLE2 = "t_soal";
+    public static final String TABLE3 = "t_nilai";
+
 
     SQLiteDatabase db;
 
-    public DatabaseHelper(Context context) {
+    DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE "+ TABLE_NAME + "(ID INTEGER PRIMARY KEY , username TEXT, password TEXT, " +
+       String t_user = "CREATE TABLE "+TABLE1+"(ID INTEGER PRIMARY KEY , username TEXT, password TEXT, " +
                 "nama_lengkap TEXT, alamat TEXT, jenis_kel TEXT, tgl_lahir TEXT, " +
-                "foto_profil BLOB)");
-        this.db = db;
+                "foto_profil BLOB)";
+
+        db.execSQL(t_user);
+
     }
 
     public void queryData(String sql){
@@ -42,14 +39,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String query = "DROP TABLE IF EXISTS "+ TABLE_NAME;
-        db.execSQL(query);
-        this.onCreate(db);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE1);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE2);
+        db.execSQL("DROP TABLE IF EXISTS "+TABLE3);
+        onCreate(db);
     }
 
     public Cursor LihatData() {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("Select * from " + TABLE_NAME, null);
+        Cursor res = db.rawQuery("Select * from " + TABLE1, null);
         return res;
     }
 
@@ -117,11 +115,11 @@ public class DatabaseHelper extends SQLiteOpenHelper{
             return false;
         }
         else {
-            String[] columns = {COL_ID};
+            String[] columns = {TABLE1};
             SQLiteDatabase db = getReadableDatabase();
-            String selection = COL_USER + "=?" + " and " + COL_PASS + "=?";
+            String selection = username + "=?" + " and " + password + "=?";
             String[] selectionArgs = {username, password};
-            Cursor cursor = db.query(TABLE_NAME, columns, selection, selectionArgs, null, null, null);
+            Cursor cursor = db.query(TABLE1, columns, selection, selectionArgs, null, null, null);
             int count = cursor.getCount();
             cursor.close();
             db.close();
