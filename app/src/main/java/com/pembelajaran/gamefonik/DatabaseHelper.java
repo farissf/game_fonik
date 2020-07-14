@@ -27,8 +27,13 @@ public class DatabaseHelper extends SQLiteOpenHelper{
        String t_user = "CREATE TABLE "+TABLE1+"(ID INTEGER PRIMARY KEY , username TEXT, password TEXT, " +
                 "nama_lengkap TEXT, alamat TEXT, jenis_kel TEXT, tgl_lahir TEXT, " +
                 "foto_profil BLOB)";
+        String t_soal = "CREATE TABLE "+TABLE2+"(id_soal INTEGER PRIMARY KEY , img_soal BLOB, img_utama BLOB, " +
+                "kata TEXT)";
+
 
         db.execSQL(t_user);
+        db.execSQL(t_soal);
+
 
     }
 
