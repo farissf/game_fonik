@@ -53,7 +53,7 @@ public class MainGame extends Activity {
         assert data != null;
         switch (data) {
             case "a":
-                soal.setBackgroundResource(R.drawable.a);
+                soal.setBackgroundResource(R.drawable.a1);
                 Button a = this.findViewById(R.id.suaraBtn);
                 a.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -75,7 +75,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "b":
-                soal.setBackgroundResource(R.drawable.b);
+                soal.setBackgroundResource(R.drawable.b1);
                 Button b = this.findViewById(R.id.suaraBtn);
                 b.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -97,7 +97,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "c":
-                soal.setBackgroundResource(R.drawable.c);
+                soal.setBackgroundResource(R.drawable.c1);
                 Button c = this.findViewById(R.id.suaraBtn);
                 c.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -119,7 +119,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "d":
-                soal.setBackgroundResource(R.drawable.d);
+                soal.setBackgroundResource(R.drawable.d1);
                 Button d = this.findViewById(R.id.suaraBtn);
                 d.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -141,7 +141,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "e":
-                soal.setBackgroundResource(R.drawable.e);
+                soal.setBackgroundResource(R.drawable.e1);
                 Button e = this.findViewById(R.id.suaraBtn);
                 e.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -163,7 +163,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "f":
-                soal.setBackgroundResource(R.drawable.f);
+                soal.setBackgroundResource(R.drawable.f1);
                 Button f = this.findViewById(R.id.suaraBtn);
                 f.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -185,7 +185,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "g":
-                soal.setBackgroundResource(R.drawable.g);
+                soal.setBackgroundResource(R.drawable.g1);
                 Button g = this.findViewById(R.id.suaraBtn);
                 g.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -207,7 +207,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "h":
-                soal.setBackgroundResource(R.drawable.h);
+                soal.setBackgroundResource(R.drawable.h1);
                 Button h = this.findViewById(R.id.suaraBtn);
                 h.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -229,7 +229,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "i":
-                soal.setBackgroundResource(R.drawable.i);
+                soal.setBackgroundResource(R.drawable.i1);
                 Button i = this.findViewById(R.id.suaraBtn);
                 i.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -251,7 +251,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "j":
-                soal.setBackgroundResource(R.drawable.j);
+                soal.setBackgroundResource(R.drawable.j1);
                 Button j = this.findViewById(R.id.suaraBtn);
                 j.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -273,7 +273,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "k":
-                soal.setBackgroundResource(R.drawable.k);
+                soal.setBackgroundResource(R.drawable.k1);
                 Button k = this.findViewById(R.id.suaraBtn);
                 k.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -295,7 +295,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "l":
-                soal.setBackgroundResource(R.drawable.l);
+                soal.setBackgroundResource(R.drawable.l1);
                 Button l = this.findViewById(R.id.suaraBtn);
                 l.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -317,7 +317,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "m":
-                soal.setBackgroundResource(R.drawable.m);
+                soal.setBackgroundResource(R.drawable.m1);
                 Button m = this.findViewById(R.id.suaraBtn);
                 m.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -339,7 +339,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "n":
-                soal.setBackgroundResource(R.drawable.n);
+                soal.setBackgroundResource(R.drawable.n1);
                 Button n = this.findViewById(R.id.suaraBtn);
                 n.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -361,7 +361,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "o":
-                soal.setBackgroundResource(R.drawable.o);
+                soal.setBackgroundResource(R.drawable.o1);
                 Button o = this.findViewById(R.id.suaraBtn);
                 o.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -383,7 +383,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "p":
-                soal.setBackgroundResource(R.drawable.p);
+                soal.setBackgroundResource(R.drawable.p1);
                 Button p = this.findViewById(R.id.suaraBtn);
                 p.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -405,7 +405,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "q":
-                soal.setBackgroundResource(R.drawable.q);
+                soal.setBackgroundResource(R.drawable.q1);
                 Button q = this.findViewById(R.id.suaraBtn);
                 q.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -427,7 +427,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "r":
-                soal.setBackgroundResource(R.drawable.r);
+                soal.setBackgroundResource(R.drawable.r1);
                 Button r = this.findViewById(R.id.suaraBtn);
                 r.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -449,7 +449,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "s":
-                soal.setBackgroundResource(R.drawable.s);
+                soal.setBackgroundResource(R.drawable.s1);
                 Button s = this.findViewById(R.id.suaraBtn);
                 s.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -471,7 +471,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "t":
-                soal.setBackgroundResource(R.drawable.t);
+                soal.setBackgroundResource(R.drawable.t1);
                 Button t = this.findViewById(R.id.suaraBtn);
                 t.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -493,7 +493,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "u":
-                soal.setBackgroundResource(R.drawable.u);
+                soal.setBackgroundResource(R.drawable.u1);
                 Button u = this.findViewById(R.id.suaraBtn);
                 u.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -515,7 +515,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "v":
-                soal.setBackgroundResource(R.drawable.v);
+                soal.setBackgroundResource(R.drawable.v1);
                 Button v = this.findViewById(R.id.suaraBtn);
                 v.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -537,7 +537,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "w":
-                soal.setBackgroundResource(R.drawable.w);
+                soal.setBackgroundResource(R.drawable.w1);
                 Button w = this.findViewById(R.id.suaraBtn);
                 w.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -559,7 +559,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "x":
-                soal.setBackgroundResource(R.drawable.x);
+                soal.setBackgroundResource(R.drawable.x1);
                 Button x = this.findViewById(R.id.suaraBtn);
                 x.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -581,7 +581,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "y":
-                soal.setBackgroundResource(R.drawable.y);
+                soal.setBackgroundResource(R.drawable.y1);
                 Button y = this.findViewById(R.id.suaraBtn);
                 y.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -603,7 +603,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "z":
-                soal.setBackgroundResource(R.drawable.z);
+                soal.setBackgroundResource(R.drawable.z1);
                 Button z = this.findViewById(R.id.suaraBtn);
                 z.setOnClickListener(new View.OnClickListener() {
                     @Override
