@@ -11,4 +11,109 @@
     android:paddingRight="@android:dimen/app_icon_size"
     android:paddingBottom="@android:dimen/app_icon_size"
     android:visibility="visible"
-    tools:context=".SukuKataActivity"/>
+    tools:context=".SukuKataActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="150dp"
+        android:columnCount="2"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp">
+
+        <Button
+            android:id="@+id/baBtn"
+            android:background="@drawable/ba"
+            android:tag="ae" />
+
+        <Button
+            android:id="@+id/biBtn"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bi"
+            android:tag="ai" />
+
+        <Button
+            android:id="@+id/buBtn"
+            android:background="@drawable/bu"
+            android:tag="ao" />
+
+        <Button
+            android:id="@+id/beBtn"
+            android:background="@drawable/be"
+            android:tag="au" />
+
+        <Button
+            android:id="@+id/boBtn"
+            android:background="@drawable/ea"
+            android:tag="ea" />
+
+        <Button
+            android:id="@+id/caBtn"
+            android:background="@drawable/ei"
+            android:tag="ei" />
+
+        <Button
+            android:id="@+id/ciBtn"
+            android:background="@drawable/eo"
+            android:tag="eo" />
+
+        <Button
+            android:id="@+id/cuBtn"
+            android:background="@drawable/eu"
+            android:tag="eu" />
+
+        <Button
+            android:id="@+id/ceBtn"
+            android:background="@drawable/ia"
+            android:tag="ia" />
+
+        <Button
+            android:id="@+id/coBtn"
+            android:background="@drawable/ie"
+            android:tag="ie" />
+
+        <Button
+            android:id="@+id/daBtn"
+            android:background="@drawable/iu"
+            android:tag="iu" />
+
+        <Button
+            android:id="@+id/diBtn"
+            android:background="@drawable/io"
+            android:tag="io" />
+
+        <Button
+            android:id="@+id/duBtn"
+            android:background="@drawable/oi"
+            android:tag="oi" />
+
+        <Button
+            android:id="@+id/doBtn"
+            android:background="@drawable/ou"
+            android:tag="ou" />
+
+        <Button
+            android:id="@+id/deBtn"
+            android:background="@drawable/ua"
+            android:tag="ua" />
+
+        <Button
+            android:id="@+id/faBtn"
+            android:background="@drawable/ue"
+            android:tag="ue" />
+
+        <Button
+            android:id="@+id/fiBtn"
+            android:background="@drawable/ui"
+            android:tag="ui" />
+
+        <Button
+            android:id="@+id/fuBtn"
+            android:background="@drawable/uo"
+            android:tag="uo" />
+
+    </GridLayout>
+
+</ScrollView>
