@@ -29,24 +29,27 @@
 
             <Button
                 android:id="@+id/drum"
-                android:text="Drum" />
+                android:background="@drawable/drum" />
 
             <Button
                 android:id="@+id/gitar"
-                android:text="Gitar" />
+                android:background="@drawable/gitar" />
+
             <Button
                 android:id="@+id/bass"
-                android:text="Bass" />
+                android:background="@drawable/bass" />
 
             <Button
                 android:id="@+id/flute"
-                android:text="Flute" />
+                android:background="@drawable/flute" />
+
             <Button
                 android:id="@+id/piano"
-                android:text="Piano" />
+                android:background="@drawable/piano" />
+
             <Button
                 android:id="@+id/suling"
-                android:text="Suling" />
+                android:background="@drawable/suling" />
 
         </GridLayout>
     </ScrollView>
