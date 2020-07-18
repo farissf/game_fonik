@@ -80,36 +80,36 @@ public class BinatangActivity extends Activity{
                 playSound(8);
             }
         });
-        Button babi = (Button) this.findViewById(R.id.babi);
-        babi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                playSound(9);
-            }
-        });
         Button gajah = (Button) this.findViewById(R.id.gajah);
         gajah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                playSound(10);
+                playSound(9);
             }
         });
         Button monyet = (Button) this.findViewById(R.id.monyet);
         monyet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                playSound(11);
+                playSound(10);
             }
         });
         Button sapi = (Button) this.findViewById(R.id.sapi);
         sapi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                playSound(12);
+                playSound(11);
             }
         });
         Button serigala = (Button) this.findViewById(R.id.serigala);
         serigala.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                playSound(12);
+            }
+        });
+        Button ular = (Button) this.findViewById(R.id.ular);
+        ular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 playSound(13);
@@ -120,13 +120,6 @@ public class BinatangActivity extends Activity{
             @Override
             public void onClick(View arg0) {
                 playSound(14);
-            }
-        });
-        Button ular = (Button) this.findViewById(R.id.ular);
-        ular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                playSound(15);
             }
         });
 
@@ -174,24 +167,21 @@ public class BinatangActivity extends Activity{
             Toast.makeText(this,isPlaying+"Suara kuda",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.kuda);
         }else if(arg == 9){
-            Toast.makeText(this,isPlaying+"Suara babi",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.babi);
-        }else if(arg == 10){
             Toast.makeText(this,isPlaying+"Suara gajah",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.gajah);
-        }else if(arg == 11){
+        }else if(arg == 10){
             Toast.makeText(this,isPlaying+"Suara monyet",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.monyet);
-        }else if(arg == 12){
+        }else if(arg == 11){
             Toast.makeText(this,isPlaying+"Suara sapi",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.sapi);
-        }else if(arg == 13){
+        }else if(arg == 12){
             Toast.makeText(this,isPlaying+"Suara serigala",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.serigala);
-        }else if(arg == 14){
+        }else if(arg == 13){
             Toast.makeText(this,isPlaying+"Suara singa",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.singa);
-        }else if(arg == 15){
+        }else if(arg == 14){
             Toast.makeText(this,isPlaying+"Suara ular",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.ular);
         }

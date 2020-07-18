@@ -29,63 +29,59 @@
 
             <Button
                 android:id="@+id/anjing"
-                android:text="Anjing" />
+                android:background="@drawable/anjing" />
 
             <Button
                 android:id="@+id/ayam"
-                android:text="Ayam" />
+                android:background="@drawable/ayam" />
 
             <Button
                 android:id="@+id/bebek"
-                android:text="Bebek" />
+                android:background="@drawable/bebek" />
 
             <Button
                 android:id="@+id/elang"
-                android:text="Elang" />
+                android:background="@drawable/elang" />
 
             <Button
                 android:id="@+id/kambing"
-                android:text="Kambing" />
+                android:background="@drawable/kambing" />
 
             <Button
                 android:id="@+id/katak"
-                android:text="Katak" />
+                android:background="@drawable/katak" />
 
             <Button
                 android:id="@+id/kucing"
-                android:text="Kucing" />
+                android:background="@drawable/kucing" />
 
             <Button
                 android:id="@+id/kuda"
-                android:text="Kuda" />
-
-            <Button
-                android:id="@+id/babi"
-                android:text="Babi" />
+                android:background="@drawable/kuda" />
 
             <Button
                 android:id="@+id/gajah"
-                android:text="Gajah" />
+                android:background="@drawable/gajah" />
 
             <Button
                 android:id="@+id/monyet"
-                android:text="Monyet" />
+                android:background="@drawable/monyet" />
 
             <Button
                 android:id="@+id/sapi"
-                android:text="Sapi" />
+                android:background="@drawable/sapi" />
 
             <Button
                 android:id="@+id/serigala"
-                android:text="Serigala" />
+                android:background="@drawable/serigala" />
 
             <Button
                 android:id="@+id/ular"
-                android:text="Ular" />
+                android:background="@drawable/ular" />
 
             <Button
                 android:id="@+id/singa"
-                android:text="Singa" />
+                android:background="@drawable/singa" />
 
         </GridLayout>
     </ScrollView>
