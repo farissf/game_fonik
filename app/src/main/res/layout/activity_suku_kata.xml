@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    android:numColumns="2"
+    android:numColumns="3"
     android:orientation="horizontal"
     android:paddingLeft="@android:dimen/app_icon_size"
     android:paddingTop="@android:dimen/app_icon_size"
@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnWidth="150dp"
-        android:columnCount="2"
+        android:columnCount="3"
         android:gravity="center"
         android:horizontalSpacing="5dp"
         android:stretchMode="columnWidth"
@@ -26,93 +26,429 @@
         <Button
             android:id="@+id/baBtn"
             android:background="@drawable/ba"
-            android:tag="ae" />
+            android:tag="ba" />
 
         <Button
             android:id="@+id/biBtn"
             android:layout_height="wrap_content"
             android:background="@drawable/bi"
-            android:tag="ai" />
+            android:tag="bi" />
 
         <Button
             android:id="@+id/buBtn"
             android:background="@drawable/bu"
-            android:tag="ao" />
+            android:tag="bu" />
 
         <Button
             android:id="@+id/beBtn"
             android:background="@drawable/be"
-            android:tag="au" />
+            android:tag="be" />
 
         <Button
             android:id="@+id/boBtn"
-            android:background="@drawable/ea"
-            android:tag="ea" />
+            android:background="@drawable/bo"
+            android:tag="bo" />
 
         <Button
             android:id="@+id/caBtn"
-            android:background="@drawable/ei"
-            android:tag="ei" />
+            android:background="@drawable/ca"
+            android:tag="ca" />
 
         <Button
             android:id="@+id/ciBtn"
-            android:background="@drawable/eo"
-            android:tag="eo" />
+            android:background="@drawable/ci"
+            android:tag="ci" />
 
         <Button
             android:id="@+id/cuBtn"
-            android:background="@drawable/eu"
-            android:tag="eu" />
+            android:background="@drawable/cu"
+            android:tag="cu" />
 
         <Button
             android:id="@+id/ceBtn"
-            android:background="@drawable/ia"
-            android:tag="ia" />
+            android:background="@drawable/ce"
+            android:tag="ce" />
 
         <Button
             android:id="@+id/coBtn"
-            android:background="@drawable/ie"
-            android:tag="ie" />
+            android:background="@drawable/co"
+            android:tag="co" />
 
         <Button
             android:id="@+id/daBtn"
-            android:background="@drawable/iu"
-            android:tag="iu" />
+            android:background="@drawable/da"
+            android:tag="da" />
 
         <Button
             android:id="@+id/diBtn"
-            android:background="@drawable/io"
-            android:tag="io" />
+            android:background="@drawable/di"
+            android:tag="di" />
 
         <Button
             android:id="@+id/duBtn"
-            android:background="@drawable/oi"
-            android:tag="oi" />
-
-        <Button
-            android:id="@+id/doBtn"
-            android:background="@drawable/ou"
-            android:tag="ou" />
+            android:background="@drawable/du"
+            android:tag="du" />
 
         <Button
             android:id="@+id/deBtn"
-            android:background="@drawable/ua"
-            android:tag="ua" />
+            android:background="@drawable/de"
+            android:tag="de" />
+
+        <Button
+            android:id="@+id/doBtn"
+            android:background="@drawable/doo"
+            android:tag="do" />
 
         <Button
             android:id="@+id/faBtn"
-            android:background="@drawable/ue"
-            android:tag="ue" />
+            android:background="@drawable/fa"
+            android:tag="fa" />
 
         <Button
             android:id="@+id/fiBtn"
-            android:background="@drawable/ui"
-            android:tag="ui" />
+            android:background="@drawable/fi"
+            android:tag="fi" />
 
         <Button
             android:id="@+id/fuBtn"
-            android:background="@drawable/uo"
-            android:tag="uo" />
+            android:background="@drawable/fu"
+            android:tag="fu" />
+
+        <Button
+            android:id="@+id/feBtn"
+            android:background="@drawable/fe"
+            android:tag="fe" />
+
+        <Button
+            android:id="@+id/foBtn"
+            android:background="@drawable/fo"
+            android:tag="fo" />
+        <Button
+            android:id="@+id/gaBtn"
+            android:background="@drawable/ga"
+            android:tag="ga" />
+
+        <Button
+            android:id="@+id/giBtn"
+            android:background="@drawable/gi"
+            android:tag="gi" />
+
+        <Button
+            android:id="@+id/guBtn"
+            android:background="@drawable/gu"
+            android:tag="gu" />
+
+        <Button
+            android:id="@+id/geBtn"
+            android:background="@drawable/ge"
+            android:tag="ge" />
+
+        <Button
+            android:id="@+id/goBtn"
+            android:background="@drawable/go"
+            android:tag="go" />
+
+        <Button
+            android:id="@+id/haBtn"
+            android:background="@drawable/ha"
+            android:tag="ha" />
+
+        <Button
+            android:id="@+id/hiBtn"
+            android:background="@drawable/hi"
+            android:tag="hi" />
+
+        <Button
+            android:id="@+id/huBtn"
+            android:background="@drawable/hu"
+            android:tag="hu" />
+
+        <Button
+            android:id="@+id/heBtn"
+            android:background="@drawable/he"
+            android:tag="he" />
+
+        <Button
+            android:id="@+id/hoBtn"
+            android:background="@drawable/ho"
+            android:tag="ho" />
+
+        <Button
+            android:id="@+id/jaBtn"
+            android:background="@drawable/ja"
+            android:tag="ja" />
+
+        <Button
+            android:id="@+id/jiBtn"
+            android:background="@drawable/ji"
+            android:tag="ji" />
+
+        <Button
+            android:id="@+id/juBtn"
+            android:background="@drawable/ju"
+            android:tag="ju" />
+
+        <Button
+            android:id="@+id/jeBtn"
+            android:background="@drawable/je"
+            android:tag="je" />
+
+        <Button
+            android:id="@+id/joBtn"
+            android:background="@drawable/jo"
+            android:tag="jo" />
+
+        <Button
+            android:id="@+id/kaBtn"
+            android:background="@drawable/ka"
+            android:tag="ka" />
+
+        <Button
+            android:id="@+id/kiBtn"
+            android:background="@drawable/ki"
+            android:tag="ki" />
+
+        <Button
+            android:id="@+id/kuBtn"
+            android:background="@drawable/ku"
+            android:tag="ku" />
+
+        <Button
+            android:id="@+id/keBtn"
+            android:background="@drawable/ke"
+            android:tag="ke" />
+
+        <Button
+            android:id="@+id/koBtn"
+            android:background="@drawable/ko"
+            android:tag="ko" />
+
+        <Button
+            android:id="@+id/laBtn"
+            android:background="@drawable/la"
+            android:tag="la" />
+
+        <Button
+            android:id="@+id/liBtn"
+            android:background="@drawable/li"
+            android:tag="li" />
+
+        <Button
+            android:id="@+id/luBtn"
+            android:background="@drawable/lu"
+            android:tag="lu" />
+
+        <Button
+            android:id="@+id/leBtn"
+            android:background="@drawable/le"
+            android:tag="le" />
+
+        <Button
+            android:id="@+id/loBtn"
+            android:background="@drawable/lo"
+            android:tag="lo" />
+
+        <Button
+            android:id="@+id/maBtn"
+            android:background="@drawable/ma"
+            android:tag="ma" />
+
+        <Button
+            android:id="@+id/miBtn"
+            android:background="@drawable/mi"
+            android:tag="mi" />
+
+        <Button
+            android:id="@+id/muBtn"
+            android:background="@drawable/mu"
+            android:tag="mu" />
+
+        <Button
+            android:id="@+id/meBtn"
+            android:background="@drawable/me"
+            android:tag="me" />
+
+        <Button
+            android:id="@+id/moBtn"
+            android:background="@drawable/mo"
+            android:tag="mo" />
+
+        <Button
+            android:id="@+id/naBtn"
+            android:background="@drawable/na"
+            android:tag="na" />
+
+        <Button
+            android:id="@+id/niBtn"
+            android:background="@drawable/ni"
+            android:tag="ni" />
+
+        <Button
+            android:id="@+id/nuBtn"
+            android:background="@drawable/nu"
+            android:tag="nu" />
+
+        <Button
+            android:id="@+id/neBtn"
+            android:background="@drawable/ne"
+            android:tag="ne" />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:background="@drawable/no"
+            android:tag="no" />
+
+        <Button
+            android:id="@+id/paBtn"
+            android:background="@drawable/pa"
+            android:tag="pa" />
+
+        <Button
+            android:id="@+id/piBtn"
+            android:background="@drawable/pi"
+            android:tag="pi" />
+
+        <Button
+            android:id="@+id/puBtn"
+            android:background="@drawable/pu"
+            android:tag="pu" />
+
+        <Button
+            android:id="@+id/peBtn"
+            android:background="@drawable/pe"
+            android:tag="pe" />
+
+        <Button
+            android:id="@+id/poBtn"
+            android:background="@drawable/po"
+            android:tag="po" />
+
+        <Button
+            android:id="@+id/raBtn"
+            android:background="@drawable/ra"
+            android:tag="ra" />
+
+        <Button
+            android:id="@+id/riBtn"
+            android:background="@drawable/ri"
+            android:tag="ri" />
+
+        <Button
+            android:id="@+id/ruBtn"
+            android:background="@drawable/ru"
+            android:tag="ru" />
+
+        <Button
+            android:id="@+id/reBtn"
+            android:background="@drawable/re"
+            android:tag="re" />
+
+        <Button
+            android:id="@+id/roBtn"
+            android:background="@drawable/ro"
+            android:tag="ro" />
+
+        <Button
+            android:id="@+id/saBtn"
+            android:background="@drawable/sa"
+            android:tag="sa" />
+
+        <Button
+            android:id="@+id/siBtn"
+            android:background="@drawable/si"
+            android:tag="si" />
+
+        <Button
+            android:id="@+id/suBtn"
+            android:background="@drawable/su"
+            android:tag="su" />
+
+        <Button
+            android:id="@+id/seBtn"
+            android:background="@drawable/se"
+            android:tag="se" />
+
+        <Button
+            android:id="@+id/soBtn"
+            android:background="@drawable/so"
+            android:tag="so" />
+
+        <Button
+            android:id="@+id/taBtn"
+            android:background="@drawable/ta"
+            android:tag="ta" />
+
+        <Button
+            android:id="@+id/tiBtn"
+            android:background="@drawable/ti"
+            android:tag="ti" />
+
+        <Button
+            android:id="@+id/tuBtn"
+            android:background="@drawable/tu"
+            android:tag="tu" />
+
+        <Button
+            android:id="@+id/teBtn"
+            android:background="@drawable/te"
+            android:tag="te" />
+
+        <Button
+            android:id="@+id/toBtn"
+            android:background="@drawable/to"
+            android:tag="to" />
+
+        <Button
+            android:id="@+id/yaBtn"
+            android:background="@drawable/ya"
+            android:tag="ya" />
+
+        <Button
+            android:id="@+id/yiBtn"
+            android:background="@drawable/yi"
+            android:tag="yi" />
+
+        <Button
+            android:id="@+id/yuBtn"
+            android:background="@drawable/yu"
+            android:tag="yu" />
+
+        <Button
+            android:id="@+id/yeBtn"
+            android:background="@drawable/ye"
+            android:tag="ye" />
+
+        <Button
+            android:id="@+id/yoBtn"
+            android:background="@drawable/yo"
+            android:tag="yo" />
+
+        <Button
+            android:id="@+id/zaBtn"
+            android:background="@drawable/za"
+            android:tag="za" />
+
+        <Button
+            android:id="@+id/ziBtn"
+            android:background="@drawable/zi"
+            android:tag="zi" />
+
+        <Button
+            android:id="@+id/zuBtn"
+            android:background="@drawable/zu"
+            android:tag="zu" />
+
+        <Button
+            android:id="@+id/zeBtn"
+            android:background="@drawable/ze"
+            android:tag="ze" />
+
+        <Button
+            android:id="@+id/zoBtn"
+            android:background="@drawable/zo"
+            android:tag="zo" />
+
+
 
     </GridLayout>
 
