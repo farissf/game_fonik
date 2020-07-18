@@ -624,20 +624,115 @@ public class MainGame extends Activity {
                     }
                 });
                 break;
-            case "ea":
-                soal.setBackgroundResource(R.drawable.ea);
+            case "ba":
+                soal.setBackgroundResource(R.drawable.ba);
+                Button ba = this.findViewById(R.id.suaraBtn);
+                ba.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        playSound(27);
+                    }
+                });
+                Button bainfo = findViewById(R.id.infoBtn);
+                bainfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_z)
+                                .show();
+                    }
+                });
                 break;
-            case "ei":
-                soal.setBackgroundResource(R.drawable.ei);
+            case "bi":
+                soal.setBackgroundResource(R.drawable.bi);
+                Button bi = this.findViewById(R.id.suaraBtn);
+                bi.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        playSound(28);
+                    }
+                });
+                Button biinfo = findViewById(R.id.infoBtn);
+                biinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_z)
+                                .show();
+                    }
+                });
                 break;
-            case "eo":
-                soal.setBackgroundResource(R.drawable.eo);
+            case "bu":
+                soal.setBackgroundResource(R.drawable.bu);
+                Button bu = this.findViewById(R.id.suaraBtn);
+                bu.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        playSound(29);
+                    }
+                });
+                Button buinfo = findViewById(R.id.infoBtn);
+                buinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_z)
+                                .show();
+                    }
+                });
                 break;
-            case "eu":
-                soal.setBackgroundResource(R.drawable.eu);
+            case "be":
+                soal.setBackgroundResource(R.drawable.be);
+                Button be = this.findViewById(R.id.suaraBtn);
+                be.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        playSound(30);
+                    }
+                });
+                Button beinfo = findViewById(R.id.infoBtn);
+                beinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_z)
+                                .show();
+                    }
+                });
                 break;
-            case "ia":
-                soal.setBackgroundResource(R.drawable.ia);
+            case "bo":
+                soal.setBackgroundResource(R.drawable.bo);
+                Button bo = this.findViewById(R.id.suaraBtn);
+                bo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View arg0) {
+                        playSound(31);
+                    }
+                });
+                Button boinfo = findViewById(R.id.infoBtn);
+                boinfo.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_z)
+                                .show();
+                    }
+                });
                 break;
             case "ie":
                 soal.setBackgroundResource(R.drawable.ie);
@@ -766,6 +861,21 @@ public class MainGame extends Activity {
         }else if(arg == 26){
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this,R.raw.soal_z2);
+        }else if(arg == 27){
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this,R.raw.basound);
+        }else if(arg == 28){
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this,R.raw.bisound);
+        }else if(arg == 29){
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this,R.raw.busound);
+        }else if(arg == 30){
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this,R.raw.besound);
+        }else if(arg == 31){
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this,R.raw.bosound);
         }
         player.setLooping(false);
         player.start();
