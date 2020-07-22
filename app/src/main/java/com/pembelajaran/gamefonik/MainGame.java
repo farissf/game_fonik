@@ -56,22 +56,22 @@ public class MainGame extends Activity {
                 soal.setBackgroundResource(R.drawable.a11);
                 Button a = this.findViewById(R.id.suaraBtn);
                 a.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View arg0) {
-                    playSound(1);
-                }
+                    @Override
+                    public void onClick(View arg0) {
+                        playSound(1);
+                    }
                 });
                 Button ainfo = findViewById(R.id.infoBtn);
                 ainfo.setOnClickListener(new View.OnClickListener() {
 
-                @Override
-                public void onClick(View v) {
-                new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                        .setTitleText("Gambar Pengucapan")
-                        .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                        .setCustomImage(R.drawable.soal_a)
-                        .show();
-                }
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Gambar Pengucapan")
+                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setCustomImage(R.drawable.soal_a)
+                                .show();
+                    }
                 });
                 break;
             case "b":
@@ -2389,144 +2389,153 @@ public class MainGame extends Activity {
         }
 
     }
+
     @Override
-    public void onPause(){
-        try{
+    public void onPause() {
+        try {
             super.onPause();
             player.pause();
-        }catch(Exception ignored){
+        } catch (Exception ignored) {
 
         }
     }
 
-    private void playSound(int arg){
-        try{
-            if (player.isPlaying()){
+    private void playSound(int arg) {
+        try {
+            if (player.isPlaying()) {
                 player.stop();
                 player.release();
             }
-        }catch (Exception e){
+        } catch (Exception e) {
 //            Toast.makeText(this, isPlaying,Toast.LENGTH_LONG).show();
         }
-        if(arg == 1){
+        if (arg == 1) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_a2);
-        }else if(arg == 2){
+            player = MediaPlayer.create(this, R.raw.soal_a2);
+        } else if (arg == 2) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_b2);
-        }else if(arg == 3){
+            player = MediaPlayer.create(this, R.raw.soal_b2);
+        } else if (arg == 3) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_c2);
-        }else if(arg == 4){
+            player = MediaPlayer.create(this, R.raw.soal_c2);
+        } else if (arg == 4) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_d2);
-        }else if(arg == 5){
+            player = MediaPlayer.create(this, R.raw.soal_d2);
+        } else if (arg == 5) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_e2);
-        }else if(arg == 6){
+            player = MediaPlayer.create(this, R.raw.soal_e2);
+        } else if (arg == 6) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_f2);
-        }else if(arg == 7){
+            player = MediaPlayer.create(this, R.raw.soal_f2);
+        } else if (arg == 7) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_g2);
-        }else if(arg == 8){
+            player = MediaPlayer.create(this, R.raw.soal_g2);
+        } else if (arg == 8) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_h2);
-        }else if(arg == 9){
+            player = MediaPlayer.create(this, R.raw.soal_h2);
+        } else if (arg == 9) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_i2);
-        }else if(arg == 10){
+            player = MediaPlayer.create(this, R.raw.soal_i2);
+        } else if (arg == 10) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_j2);
-        }else if(arg == 11){
+            player = MediaPlayer.create(this, R.raw.soal_j2);
+        } else if (arg == 11) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_k2);
-        }else if(arg == 12){
+            player = MediaPlayer.create(this, R.raw.soal_k2);
+        } else if (arg == 12) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_l2);
-        }else if(arg == 13){
+            player = MediaPlayer.create(this, R.raw.soal_l2);
+        } else if (arg == 13) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_m2);
-        }else if(arg == 14){
+            player = MediaPlayer.create(this, R.raw.soal_m2);
+        } else if (arg == 14) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_n2);
-        }else if(arg == 15){
+            player = MediaPlayer.create(this, R.raw.soal_n2);
+        } else if (arg == 15) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_o2);
-        }else if(arg == 16){
+            player = MediaPlayer.create(this, R.raw.soal_o2);
+        } else if (arg == 16) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_p2);
-        }else if(arg == 17){
+            player = MediaPlayer.create(this, R.raw.soal_p2);
+        } else if (arg == 17) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_q2);
-        }else if(arg == 18){
+            player = MediaPlayer.create(this, R.raw.soal_q2);
+        } else if (arg == 18) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_r2);
-        }else if(arg == 19){
+            player = MediaPlayer.create(this, R.raw.soal_r2);
+        } else if (arg == 19) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_s2);
-        }else if(arg == 20){
+            player = MediaPlayer.create(this, R.raw.soal_s2);
+        } else if (arg == 20) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_t2);
-        }else if(arg == 21){
+            player = MediaPlayer.create(this, R.raw.soal_t2);
+        } else if (arg == 21) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_u2);
-        }else if(arg == 22){
+            player = MediaPlayer.create(this, R.raw.soal_u2);
+        } else if (arg == 22) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_v2);
-        }else if(arg == 23){
+            player = MediaPlayer.create(this, R.raw.soal_v2);
+        } else if (arg == 23) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_w2);
-        }else if(arg == 24){
+            player = MediaPlayer.create(this, R.raw.soal_w2);
+        } else if (arg == 24) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_x2);
-        }else if(arg == 25){
+            player = MediaPlayer.create(this, R.raw.soal_x2);
+        } else if (arg == 25) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_y2);
-        }else if(arg == 26){
+            player = MediaPlayer.create(this, R.raw.soal_y2);
+        } else if (arg == 26) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.soal_z2);
-        }else if(arg == 27){
+            player = MediaPlayer.create(this, R.raw.soal_z2);
+        } else if (arg == 27) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.basound);
-        }else if(arg == 28){
+            player = MediaPlayer.create(this, R.raw.basound);
+        } else if (arg == 28) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.bisound);
-        }else if(arg == 29){
+            player = MediaPlayer.create(this, R.raw.bisound);
+        } else if (arg == 29) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.busound);
-        }else if(arg == 30){
+            player = MediaPlayer.create(this, R.raw.busound);
+        } else if (arg == 30) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.besound);
-        }else if(arg == 31){
+            player = MediaPlayer.create(this, R.raw.besound);
+        } else if (arg == 31) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
-            player = MediaPlayer.create(this,R.raw.bosound);
+            player = MediaPlayer.create(this, R.raw.bosound);
         }
         player.setLooping(false);
         player.start();
 
     }
 
-    public void getSpeechInput(View view){
+    public void getSpeechInput(View view) {
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Masukkan suara");
 
-        if(intent.resolveActivity(getPackageManager())!=null) {
-            startActivityForResult(intent, 10);
-        } else {
-            Toast.makeText(this, "Perangkat anda tidak  mendukung", Toast.LENGTH_SHORT).show();
-        }
+        startActivityForResult(intent, 10);
+
     }
-    protected void onActivityResult(int requestCode,int resultCode, Intent data){
-        super.onActivityResult(requestCode, resultCode,data);
 
-        if (requestCode == 10) {
-            if ((resultCode == RESULT_OK && data != null)) {
-                ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-                assert result != null;
-                jawabanTxt.setText(result.get(0));
-            }
-        }
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+        assert result !=null;
+        //String result =null;
+        jawabanTxt.setText(result.get(0));
     }
 }
+        //protected void onActivityResult(int requestCode,int resultCode, Intent data){
+        //super.onActivityResult(requestCode, resultCode,data);
+        //ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+        //assert result != null;
+        //jawabanTxt.setText(result.get(0));
+
+        //if (requestCode == 10) {
+        //if ((resultCode == RESULT_OK && data != null)) {
+        //ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+        //assert result != null;
+        //jawabanTxt.setText(result.get(0));
+
+
