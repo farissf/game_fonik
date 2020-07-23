@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridLayout;
+import android.widget.GridView;
 
 public class HurufActivity extends AppCompatActivity {
     private Button buttona,buttonb,buttonc,buttond,buttone,buttonf,buttong,buttonh,buttoni,buttonj,
@@ -75,6 +77,7 @@ public class HurufActivity extends AppCompatActivity {
                 if(v.getTag() != null)
                     intent.putExtra("id", "" + v.getTag().toString());
                     intent.putExtra("view",""+ buttond);
+
                 startActivity(intent);
             }
         });

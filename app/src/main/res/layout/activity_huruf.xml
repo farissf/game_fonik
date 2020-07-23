@@ -6,22 +6,19 @@
     android:background="@drawable/bg"
     android:numColumns="3"
     android:orientation="horizontal"
-    android:paddingLeft="@android:dimen/app_icon_size"
-    android:paddingTop="@android:dimen/app_icon_size"
-    android:paddingRight="@android:dimen/app_icon_size"
-    android:paddingBottom="@android:dimen/app_icon_size"
     android:visibility="visible"
     tools:context=".HurufActivity">
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnWidth="150dp"
+        android:columnWidth="100dp"
         android:columnCount="3"
+        android:rowCount="3"
         android:gravity="center"
-        android:horizontalSpacing="5dp"
+        android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="5dp">
+        android:verticalSpacing="2500dp">
 
         <Button
             android:id="@+id/aBtn"
@@ -31,12 +28,13 @@
         <Button
             android:id="@+id/bBtn"
             android:background="@drawable/b"
-            android:tag="b" />
+            android:tag="b"
+            />
 
         <Button
             android:id="@+id/cBtn"
             android:background="@drawable/c"
-            android:tag="c" />
+            android:tag="c"/>
 
         <Button
             android:id="@+id/dBtn"

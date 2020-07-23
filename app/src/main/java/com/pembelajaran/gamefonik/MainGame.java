@@ -21,10 +21,11 @@ import java.util.Objects;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MainGame extends Activity {
-    private TextView jawabanTxt;
+    private TextView jawabanTxt,testText;
     TextView soal;
     private String textA;
     TextView textView;
+
 
     SpeechRecognizer mSpeechRecognizer;
     Intent mSpeechRecognizerIntent;
@@ -40,6 +41,7 @@ public class MainGame extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_game_act);
         jawabanTxt = findViewById(R.id.jawabanTxt);
+        testText = findViewById(R.id.testText);
         kembali = findViewById(R.id.backBtn);
         kembali.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,7 @@ public class MainGame extends Activity {
             }
         });
 
+        testText.setText(Objects.requireNonNull(getIntent().getExtras()).getString("id"));
         soal = findViewById(R.id.soalimg);
         String data = Objects.requireNonNull(getIntent().getExtras()).getString("id");
         assert data != null;
@@ -2522,10 +2525,18 @@ public class MainGame extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
         assert result !=null;
+        jawabanTxt.setText(result.get(0))
+
         //String result =null;
-        jawabanTxt.setText(result.get(0));
+        ;
+       // if(j.compareTo(res) ==0) {
+
+            //Toast.makeText(getApplicationContext(), "Sama",Toast.LENGTH_LONG);
+        //}else{
+            //Toast.makeText(getApplicationContext(), "Beda",Toast.LENGTH_LONG);
+        }
     }
-}
+
         //protected void onActivityResult(int requestCode,int resultCode, Intent data){
         //super.onActivityResult(requestCode, resultCode,data);
         //ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
