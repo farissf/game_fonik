@@ -2,6 +2,7 @@ package com.pembelajaran.gamefonik;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Objects;
@@ -33,7 +35,7 @@ public class MainGame extends Activity {
     private static final String isPlaying = "";
     private MediaPlayer player;
     Button kembali;
-
+    String jawabanHuruf;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -56,6 +58,7 @@ public class MainGame extends Activity {
         assert data != null;
         switch (data) {
             case "a":
+                jawabanHuruf = "a";
                 soal.setBackgroundResource(R.drawable.a11);
                 Button a = this.findViewById(R.id.suaraBtn);
                 a.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +81,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "b":
+                jawabanHuruf = "be";
                 soal.setBackgroundResource(R.drawable.b1);
                 Button b = this.findViewById(R.id.suaraBtn);
                 b.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +104,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "c":
+                jawabanHuruf = "ce";
                 soal.setBackgroundResource(R.drawable.c1);
                 Button c = this.findViewById(R.id.suaraBtn);
                 c.setOnClickListener(new View.OnClickListener() {
@@ -122,6 +127,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "d":
+                jawabanHuruf = "de";
                 soal.setBackgroundResource(R.drawable.d1);
                 Button d = this.findViewById(R.id.suaraBtn);
                 d.setOnClickListener(new View.OnClickListener() {
@@ -144,6 +150,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "e":
+                jawabanHuruf = "e";
                 soal.setBackgroundResource(R.drawable.e1);
                 Button e = this.findViewById(R.id.suaraBtn);
                 e.setOnClickListener(new View.OnClickListener() {
@@ -166,6 +173,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "f":
+                jawabanHuruf = "f";
                 soal.setBackgroundResource(R.drawable.f1);
                 Button f = this.findViewById(R.id.suaraBtn);
                 f.setOnClickListener(new View.OnClickListener() {
@@ -188,6 +196,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "g":
+                jawabanHuruf = "ge";
                 soal.setBackgroundResource(R.drawable.g1);
                 Button g = this.findViewById(R.id.suaraBtn);
                 g.setOnClickListener(new View.OnClickListener() {
@@ -210,6 +219,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "h":
+                jawabanHuruf = "ha";
                 soal.setBackgroundResource(R.drawable.h1);
                 Button h = this.findViewById(R.id.suaraBtn);
                 h.setOnClickListener(new View.OnClickListener() {
@@ -232,6 +242,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "i":
+                jawabanHuruf = "i";
                 soal.setBackgroundResource(R.drawable.i1);
                 Button i = this.findViewById(R.id.suaraBtn);
                 i.setOnClickListener(new View.OnClickListener() {
@@ -254,6 +265,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "j":
+                jawabanHuruf = "je";
                 soal.setBackgroundResource(R.drawable.j1);
                 Button j = this.findViewById(R.id.suaraBtn);
                 j.setOnClickListener(new View.OnClickListener() {
@@ -276,6 +288,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "k":
+                jawabanHuruf = "ka";
                 soal.setBackgroundResource(R.drawable.k1);
                 Button k = this.findViewById(R.id.suaraBtn);
                 k.setOnClickListener(new View.OnClickListener() {
@@ -298,6 +311,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "l":
+                jawabanHuruf = "l";
                 soal.setBackgroundResource(R.drawable.l1);
                 Button l = this.findViewById(R.id.suaraBtn);
                 l.setOnClickListener(new View.OnClickListener() {
@@ -320,6 +334,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "m":
+                jawabanHuruf = "m";
                 soal.setBackgroundResource(R.drawable.m1);
                 Button m = this.findViewById(R.id.suaraBtn);
                 m.setOnClickListener(new View.OnClickListener() {
@@ -342,6 +357,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "n":
+                jawabanHuruf = "n";
                 soal.setBackgroundResource(R.drawable.n1);
                 Button n = this.findViewById(R.id.suaraBtn);
                 n.setOnClickListener(new View.OnClickListener() {
@@ -364,6 +380,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "o":
+                jawabanHuruf = "o";
                 soal.setBackgroundResource(R.drawable.o1);
                 Button o = this.findViewById(R.id.suaraBtn);
                 o.setOnClickListener(new View.OnClickListener() {
@@ -386,6 +403,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "p":
+                jawabanHuruf = "pe";
                 soal.setBackgroundResource(R.drawable.p1);
                 Button p = this.findViewById(R.id.suaraBtn);
                 p.setOnClickListener(new View.OnClickListener() {
@@ -408,6 +426,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "q":
+                jawabanHuruf = "q";
                 soal.setBackgroundResource(R.drawable.q1);
                 Button q = this.findViewById(R.id.suaraBtn);
                 q.setOnClickListener(new View.OnClickListener() {
@@ -430,6 +449,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "r":
+                jawabanHuruf = "r";
                 soal.setBackgroundResource(R.drawable.r1);
                 Button r = this.findViewById(R.id.suaraBtn);
                 r.setOnClickListener(new View.OnClickListener() {
@@ -452,6 +472,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "s":
+                jawabanHuruf = "s";
                 soal.setBackgroundResource(R.drawable.s1);
                 Button s = this.findViewById(R.id.suaraBtn);
                 s.setOnClickListener(new View.OnClickListener() {
@@ -474,6 +495,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "t":
+                jawabanHuruf = "te";
                 soal.setBackgroundResource(R.drawable.t1);
                 Button t = this.findViewById(R.id.suaraBtn);
                 t.setOnClickListener(new View.OnClickListener() {
@@ -496,6 +518,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "u":
+                jawabanHuruf = "u";
                 soal.setBackgroundResource(R.drawable.u1);
                 Button u = this.findViewById(R.id.suaraBtn);
                 u.setOnClickListener(new View.OnClickListener() {
@@ -518,6 +541,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "v":
+                jawabanHuruf = "v";
                 soal.setBackgroundResource(R.drawable.v1);
                 Button v = this.findViewById(R.id.suaraBtn);
                 v.setOnClickListener(new View.OnClickListener() {
@@ -540,6 +564,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "w":
+                jawabanHuruf = "we";
                 soal.setBackgroundResource(R.drawable.w1);
                 Button w = this.findViewById(R.id.suaraBtn);
                 w.setOnClickListener(new View.OnClickListener() {
@@ -562,6 +587,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "x":
+                jawabanHuruf = "x";
                 soal.setBackgroundResource(R.drawable.x1);
                 Button x = this.findViewById(R.id.suaraBtn);
                 x.setOnClickListener(new View.OnClickListener() {
@@ -584,6 +610,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "y":
+                jawabanHuruf = "ye";
                 soal.setBackgroundResource(R.drawable.y1);
                 Button y = this.findViewById(R.id.suaraBtn);
                 y.setOnClickListener(new View.OnClickListener() {
@@ -606,6 +633,7 @@ public class MainGame extends Activity {
                 });
                 break;
             case "z":
+                jawabanHuruf = "zet";
                 soal.setBackgroundResource(R.drawable.z1);
                 Button z = this.findViewById(R.id.suaraBtn);
                 z.setOnClickListener(new View.OnClickListener() {
@@ -2750,7 +2778,57 @@ public class MainGame extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
         assert result !=null;
-        jawabanTxt.setText(result.get(0));
+        DecimalFormat df2 = new DecimalFormat("#.##");
+        String resultVoice = result.get(0);
+        String jawaban =  testText.getText().toString();
+
+        if(result.get(0).equalsIgnoreCase(jawaban)){
+            jawabanTxt.setText("100%");
+        }else{
+            Double jumlahHurufsalah = (double) 0;
+            Double jumlahHuruf = (double) jawaban.length();
+            if(resultVoice.length() > jumlahHuruf){
+                jumlahHurufsalah = resultVoice.length() - jumlahHuruf;
+                if(resultVoice.contains(jawaban)){
+                    Double persentaseSalah = 100 - (jumlahHurufsalah / resultVoice.length() * 100);
+                    jawabanTxt.setText(df2.format(persentaseSalah)+"%");
+                }else {
+                    jawabanTxt.setText("0%");
+                }
+            }else {
+                jumlahHurufsalah = jumlahHuruf - resultVoice.length();
+                if(jawaban.contains(resultVoice)){
+                    Double persentaseSalah = 100 - (jumlahHurufsalah / jumlahHuruf * 100);
+                    jawabanTxt.setText(df2.format(persentaseSalah)+"%");
+                }else {
+                    jawabanTxt.setText("0%");
+                }
+            }
+
+        }
+        final SweetAlertDialog pDialog;
+        if(jawabanTxt.getText().equals("100%")) {
+            pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.SUCCESS_TYPE);
+            pDialog.setContentText("jawaban kamu tepat nilai kamu adalah " + jawabanTxt.getText());
+        } else if(!jawabanTxt.getText().equals("100%") && !jawabanTxt.getText().equals("0%")){
+            pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.WARNING_TYPE);
+            pDialog.setContentText("jawaban kamu hampir tepat nilai kamu adalah " + jawabanTxt.getText());
+        }
+        else{
+            pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.ERROR_TYPE);
+            pDialog.setContentText("jawaban kamu kurang tepat nilai kamu adalah " + jawabanTxt.getText());
+        }
+        pDialog.setTitleText("Penilaian!");
+        pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+        pDialog.setConfirmText("Kembali");
+        pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+            @Override
+            public void onClick(SweetAlertDialog sDialog) {
+                finish();
+            }
+        });
+        pDialog.setCancelable(true);
+        pDialog.show();
 
         //String result =null;
 
