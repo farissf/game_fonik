@@ -743,7 +743,7 @@ public class MainGame extends Activity {
                 ca.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(32);
                     }
                 });
                 Button cainfo = findViewById(R.id.infoBtn);
@@ -765,7 +765,7 @@ public class MainGame extends Activity {
                 ci.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(33);
                     }
                 });
                 Button ciinfo = findViewById(R.id.infoBtn);
@@ -787,7 +787,7 @@ public class MainGame extends Activity {
                 cu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(34);
                     }
                 });
                 Button cuinfo = findViewById(R.id.infoBtn);
@@ -809,7 +809,7 @@ public class MainGame extends Activity {
                 ce.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(35);
                     }
                 });
                 Button ceinfo = findViewById(R.id.infoBtn);
@@ -831,7 +831,7 @@ public class MainGame extends Activity {
                 co.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(36);
                     }
                 });
                 Button coinfo = findViewById(R.id.infoBtn);
@@ -854,7 +854,7 @@ public class MainGame extends Activity {
                 da.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(37);
                     }
                 });
                 Button dainfo = findViewById(R.id.infoBtn);
@@ -876,7 +876,7 @@ public class MainGame extends Activity {
                 di.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(38);
                     }
                 });
                 Button diinfo = findViewById(R.id.infoBtn);
@@ -898,7 +898,7 @@ public class MainGame extends Activity {
                 du.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(39);
                     }
                 });
                 Button duinfo = findViewById(R.id.infoBtn);
@@ -920,7 +920,7 @@ public class MainGame extends Activity {
                 de.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(40);
                     }
                 });
                 Button deinfo = findViewById(R.id.infoBtn);
@@ -942,7 +942,7 @@ public class MainGame extends Activity {
                 doo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(41);
                     }
                 });
                 Button dooinfo = findViewById(R.id.infoBtn);
@@ -964,7 +964,7 @@ public class MainGame extends Activity {
                 fa.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(42);
                     }
                 });
                 Button fainfo = findViewById(R.id.infoBtn);
@@ -986,7 +986,7 @@ public class MainGame extends Activity {
                 fi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(43);
                     }
                 });
                 Button fiinfo = findViewById(R.id.infoBtn);
@@ -1008,7 +1008,7 @@ public class MainGame extends Activity {
                 fu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(44);
                     }
                 });
                 Button fuinfo = findViewById(R.id.infoBtn);
@@ -1030,7 +1030,7 @@ public class MainGame extends Activity {
                 fe.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(45);
                     }
                 });
                 Button feinfo = findViewById(R.id.infoBtn);
@@ -1052,7 +1052,7 @@ public class MainGame extends Activity {
                 fo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(46);
                     }
                 });
                 Button foinfo = findViewById(R.id.infoBtn);
@@ -1074,7 +1074,7 @@ public class MainGame extends Activity {
                 ga.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(47);
                     }
                 });
                 Button gainfo = findViewById(R.id.infoBtn);
@@ -1096,7 +1096,7 @@ public class MainGame extends Activity {
                 gi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(48);
                     }
                 });
                 Button giinfo = findViewById(R.id.infoBtn);
@@ -1118,7 +1118,7 @@ public class MainGame extends Activity {
                 gu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(49);
                     }
                 });
                 Button guinfo = findViewById(R.id.infoBtn);
@@ -1140,7 +1140,7 @@ public class MainGame extends Activity {
                 ge.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(50);
                     }
                 });
                 Button geinfo = findViewById(R.id.infoBtn);
@@ -1162,7 +1162,7 @@ public class MainGame extends Activity {
                 go.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(51);
                     }
                 });
                 Button goinfo = findViewById(R.id.infoBtn);
@@ -1184,7 +1184,7 @@ public class MainGame extends Activity {
                 ha.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(52);
                     }
                 });
                 Button hainfo = findViewById(R.id.infoBtn);
@@ -1206,7 +1206,7 @@ public class MainGame extends Activity {
                 hi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(53);
                     }
                 });
                 Button hiinfo = findViewById(R.id.infoBtn);
@@ -1228,7 +1228,7 @@ public class MainGame extends Activity {
                 hu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(54);
                     }
                 });
                 Button huinfo = findViewById(R.id.infoBtn);
@@ -1250,7 +1250,7 @@ public class MainGame extends Activity {
                 he.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(55);
                     }
                 });
                 Button heinfo = findViewById(R.id.infoBtn);
@@ -1272,7 +1272,7 @@ public class MainGame extends Activity {
                 ho.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(56);
                     }
                 });
                 Button hoinfo = findViewById(R.id.infoBtn);
@@ -1294,7 +1294,7 @@ public class MainGame extends Activity {
                 ja.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(57);
                     }
                 });
                 Button jainfo = findViewById(R.id.infoBtn);
@@ -1316,7 +1316,7 @@ public class MainGame extends Activity {
                 ji.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(58);
                     }
                 });
                 Button jiinfo = findViewById(R.id.infoBtn);
@@ -1338,7 +1338,7 @@ public class MainGame extends Activity {
                 ju.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(59);
                     }
                 });
                 Button juinfo = findViewById(R.id.infoBtn);
@@ -1360,7 +1360,7 @@ public class MainGame extends Activity {
                 je.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(60);
                     }
                 });
                 Button jeinfo = findViewById(R.id.infoBtn);
@@ -1382,7 +1382,7 @@ public class MainGame extends Activity {
                 jo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(61);
                     }
                 });
                 Button joinfo = findViewById(R.id.infoBtn);
@@ -1404,7 +1404,7 @@ public class MainGame extends Activity {
                 ka.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(62);
                     }
                 });
                 Button kainfo = findViewById(R.id.infoBtn);
@@ -1426,7 +1426,7 @@ public class MainGame extends Activity {
                 ki.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(63);
                     }
                 });
                 Button kiinfo = findViewById(R.id.infoBtn);
@@ -1448,7 +1448,7 @@ public class MainGame extends Activity {
                 ku.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(64);
                     }
                 });
                 Button kuinfo = findViewById(R.id.infoBtn);
@@ -1470,7 +1470,7 @@ public class MainGame extends Activity {
                 ke.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(65);
                     }
                 });
                 Button keinfo = findViewById(R.id.infoBtn);
@@ -1492,7 +1492,7 @@ public class MainGame extends Activity {
                 ko.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(66);
                     }
                 });
                 Button koinfo = findViewById(R.id.infoBtn);
@@ -1514,7 +1514,7 @@ public class MainGame extends Activity {
                 la.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(67);
                     }
                 });
                 Button lainfo = findViewById(R.id.infoBtn);
@@ -1536,7 +1536,7 @@ public class MainGame extends Activity {
                 li.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(68);
                     }
                 });
                 Button liinfo = findViewById(R.id.infoBtn);
@@ -1558,7 +1558,7 @@ public class MainGame extends Activity {
                 lu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(69);
                     }
                 });
                 Button luinfo = findViewById(R.id.infoBtn);
@@ -1580,7 +1580,7 @@ public class MainGame extends Activity {
                 le.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(70);
                     }
                 });
                 Button leinfo = findViewById(R.id.infoBtn);
@@ -1602,7 +1602,7 @@ public class MainGame extends Activity {
                 lo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(71);
                     }
                 });
                 Button loinfo = findViewById(R.id.infoBtn);
@@ -1624,7 +1624,7 @@ public class MainGame extends Activity {
                 ma.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(72);
                     }
                 });
                 Button mainfo = findViewById(R.id.infoBtn);
@@ -1646,7 +1646,7 @@ public class MainGame extends Activity {
                 mi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(73);
                     }
                 });
                 Button miinfo = findViewById(R.id.infoBtn);
@@ -1668,7 +1668,7 @@ public class MainGame extends Activity {
                 mu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(74);
                     }
                 });
                 Button muinfo = findViewById(R.id.infoBtn);
@@ -1690,7 +1690,7 @@ public class MainGame extends Activity {
                 me.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(75);
                     }
                 });
                 Button meinfo = findViewById(R.id.infoBtn);
@@ -1712,7 +1712,7 @@ public class MainGame extends Activity {
                 mo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(76);
                     }
                 });
                 Button moinfo = findViewById(R.id.infoBtn);
@@ -1734,7 +1734,7 @@ public class MainGame extends Activity {
                 na.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(77);
                     }
                 });
                 Button nainfo = findViewById(R.id.infoBtn);
@@ -1756,7 +1756,7 @@ public class MainGame extends Activity {
                 ni.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(78);
                     }
                 });
                 Button niinfo = findViewById(R.id.infoBtn);
@@ -1778,7 +1778,7 @@ public class MainGame extends Activity {
                 nu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(79);
                     }
                 });
                 Button nuinfo = findViewById(R.id.infoBtn);
@@ -1800,7 +1800,7 @@ public class MainGame extends Activity {
                 ne.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(80);
                     }
                 });
                 Button neinfo = findViewById(R.id.infoBtn);
@@ -1822,7 +1822,7 @@ public class MainGame extends Activity {
                 no.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(81);
                     }
                 });
                 Button noinfo = findViewById(R.id.infoBtn);
@@ -1844,7 +1844,7 @@ public class MainGame extends Activity {
                 pa.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(82);
                     }
                 });
                 Button painfo = findViewById(R.id.infoBtn);
@@ -1866,7 +1866,7 @@ public class MainGame extends Activity {
                 pi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(83);
                     }
                 });
                 Button piinfo = findViewById(R.id.infoBtn);
@@ -1888,7 +1888,7 @@ public class MainGame extends Activity {
                 pu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(84);
                     }
                 });
                 Button puinfo = findViewById(R.id.infoBtn);
@@ -1910,7 +1910,7 @@ public class MainGame extends Activity {
                 pe.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(85);
                     }
                 });
                 Button peinfo = findViewById(R.id.infoBtn);
@@ -1932,7 +1932,7 @@ public class MainGame extends Activity {
                 po.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(86);
                     }
                 });
                 Button poinfo = findViewById(R.id.infoBtn);
@@ -1954,7 +1954,7 @@ public class MainGame extends Activity {
                 ra.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(87);
                     }
                 });
                 Button rainfo = findViewById(R.id.infoBtn);
@@ -1976,7 +1976,7 @@ public class MainGame extends Activity {
                 ri.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(88);
                     }
                 });
                 Button riinfo = findViewById(R.id.infoBtn);
@@ -1998,7 +1998,7 @@ public class MainGame extends Activity {
                 ru.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(89);
                     }
                 });
                 Button ruinfo = findViewById(R.id.infoBtn);
@@ -2020,7 +2020,7 @@ public class MainGame extends Activity {
                 re.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(90);
                     }
                 });
                 Button reinfo = findViewById(R.id.infoBtn);
@@ -2042,7 +2042,7 @@ public class MainGame extends Activity {
                 ro.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(91);
                     }
                 });
                 Button roinfo = findViewById(R.id.infoBtn);
@@ -2064,7 +2064,7 @@ public class MainGame extends Activity {
                 sa.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(92);
                     }
                 });
                 Button sainfo = findViewById(R.id.infoBtn);
@@ -2086,7 +2086,7 @@ public class MainGame extends Activity {
                 si.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(93);
                     }
                 });
                 Button siinfo = findViewById(R.id.infoBtn);
@@ -2108,7 +2108,7 @@ public class MainGame extends Activity {
                 su.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(94);
                     }
                 });
                 Button suinfo = findViewById(R.id.infoBtn);
@@ -2130,7 +2130,7 @@ public class MainGame extends Activity {
                 se.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(95);
                     }
                 });
                 Button seinfo = findViewById(R.id.infoBtn);
@@ -2152,7 +2152,7 @@ public class MainGame extends Activity {
                 so.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(96);
                     }
                 });
                 Button soinfo = findViewById(R.id.infoBtn);
@@ -2174,7 +2174,7 @@ public class MainGame extends Activity {
                 ta.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(97);
                     }
                 });
                 Button tainfo = findViewById(R.id.infoBtn);
@@ -2196,7 +2196,7 @@ public class MainGame extends Activity {
                 ti.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(98);
                     }
                 });
                 Button tiinfo = findViewById(R.id.infoBtn);
@@ -2218,7 +2218,7 @@ public class MainGame extends Activity {
                 tu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(99);
                     }
                 });
                 Button tuinfo = findViewById(R.id.infoBtn);
@@ -2240,7 +2240,7 @@ public class MainGame extends Activity {
                 te.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(100);
                     }
                 });
                 Button teinfo = findViewById(R.id.infoBtn);
@@ -2262,7 +2262,7 @@ public class MainGame extends Activity {
                 to.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(101);
                     }
                 });
                 Button toinfo = findViewById(R.id.infoBtn);
@@ -2284,7 +2284,7 @@ public class MainGame extends Activity {
                 za.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(102);
                     }
                 });
                 Button zainfo = findViewById(R.id.infoBtn);
@@ -2306,7 +2306,7 @@ public class MainGame extends Activity {
                 zi.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(28);
+                        playSound(103);
                     }
                 });
                 Button ziinfo = findViewById(R.id.infoBtn);
@@ -2328,7 +2328,7 @@ public class MainGame extends Activity {
                 zu.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(29);
+                        playSound(104);
                     }
                 });
                 Button zuinfo = findViewById(R.id.infoBtn);
@@ -2350,7 +2350,7 @@ public class MainGame extends Activity {
                 ze.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(30);
+                        playSound(105);
                     }
                 });
                 Button zeinfo = findViewById(R.id.infoBtn);
@@ -2372,7 +2372,7 @@ public class MainGame extends Activity {
                 zo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View arg0) {
-                        playSound(31);
+                        playSound(106);
                     }
                 });
                 Button zoinfo = findViewById(R.id.infoBtn);
@@ -2505,6 +2505,231 @@ public class MainGame extends Activity {
         } else if (arg == 31) {
 //            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
             player = MediaPlayer.create(this, R.raw.bosound);
+        }else if (arg == 32) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.casound);
+        } else if (arg == 33) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.cisound);
+        } else if (arg == 34) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.cusound);
+        } else if (arg == 35) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.cesound);
+        }else if (arg == 36) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.cosound);
+        } else if (arg == 37) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.dasound);
+        } else if (arg == 38) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.disound);
+        } else if (arg == 39) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.dusound);
+        }else if (arg == 40) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.desound);
+        } else if (arg == 41) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.dosound);
+        } else if (arg == 42) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.fasound);
+        } else if (arg == 43) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.fisound);
+        }else if (arg == 44) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.fusound);
+        } else if (arg == 45) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.fesound);
+        } else if (arg == 46) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.fosound);
+        } else if (arg == 47) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.gasound);
+        }else if (arg == 48) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.gisound);
+        } else if (arg == 49) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.gusound);
+        } else if (arg == 50) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.gesound);
+        } else if (arg == 51) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.gosound);
+        }else if (arg == 52) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.hasound);
+        } else if (arg == 53) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.hisound);
+        } else if (arg == 54) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.husound);
+        } else if (arg == 55) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.hesound);
+        }else if (arg == 56) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.hosund);
+        } else if (arg == 57) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.jasound);
+        } else if (arg == 58) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.jisound);
+        } else if (arg == 59) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.jusound);
+        }else if (arg == 60) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.jesound);
+        } else if (arg == 61) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.josound);
+        } else if (arg == 62) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.kasound);
+        } else if (arg == 63) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.kisound);
+        }else if (arg == 64) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.kusound);
+        } else if (arg == 65) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.kesound);
+        } else if (arg == 66) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.kosound);
+        } else if (arg == 67) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.lasound);
+        }else if (arg == 68) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.lisound);
+        } else if (arg == 69) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.lusound);
+        } else if (arg == 70) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.lesound);
+        } else if (arg == 71) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.losound);
+        }else if (arg == 72) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.masound);
+        } else if (arg == 73) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.misound);
+        } else if (arg == 74) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.musound);
+        } else if (arg == 75) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.mesound);
+        }else if (arg == 76) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.mosound);
+        } else if (arg == 77) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.nasound);
+        } else if (arg == 78) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.nisound);
+        } else if (arg == 79) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.nusound);
+        }else if (arg == 80) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.nesound);
+        } else if (arg == 81) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.nosound);
+        } else if (arg == 82) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.pasound);
+        } else if (arg == 83) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.pisound);
+        }else if (arg == 84) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.pusound);
+        } else if (arg == 85) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.pesound);
+        } else if (arg == 86) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.posound);
+        } else if (arg == 87) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.rasound);
+        }else if (arg == 88) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.risound);
+        } else if (arg == 89) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.rusound);
+        } else if (arg == 90) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.resound);
+        } else if (arg == 91) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.rosound);
+        }else if (arg == 92) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.sasound);
+        } else if (arg == 93) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.sisound);
+        } else if (arg == 94) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.susound);
+        } else if (arg == 95) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.sesound);
+        }else if (arg == 96) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.sosound);
+        } else if (arg == 97) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.tasound);
+        } else if (arg == 98) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.tisound);
+        } else if (arg == 99) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.tusound);
+        }else if (arg == 100) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.tesound);
+        } else if (arg == 101) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.tosound);
+        } else if (arg == 102) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.zasound);
+        } else if (arg == 103) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.zisound);
+        }else if (arg == 104) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.zusound);
+        }else if (arg == 103) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.zesound);
+        }else if (arg == 104) {
+//            Toast.makeText(this,isPlaying+"Play Pelafalan",Toast.LENGTH_LONG).show();
+            player = MediaPlayer.create(this, R.raw.zosound);
         }
         player.setLooping(false);
         player.start();
@@ -2525,10 +2750,10 @@ public class MainGame extends Activity {
         super.onActivityResult(requestCode, resultCode, data);
         ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
         assert result !=null;
-        jawabanTxt.setText(result.get(0))
+        jawabanTxt.setText(result.get(0));
 
         //String result =null;
-        ;
+
        // if(j.compareTo(res) ==0) {
 
             //Toast.makeText(getApplicationContext(), "Sama",Toast.LENGTH_LONG);
