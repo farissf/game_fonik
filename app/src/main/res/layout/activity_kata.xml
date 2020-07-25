@@ -194,7 +194,7 @@
             android:tag="hidung" />
 
         <Button
-            android:id="@+id/hutangBtn"
+            android:id="@+id/hutanBtn"
             android:background="@drawable/hutan"
             android:tag="hutan" />
         <Button

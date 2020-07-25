@@ -18,7 +18,7 @@
         android:gravity="center"
         android:horizontalSpacing="10dp"
         android:stretchMode="columnWidth"
-        android:verticalSpacing="2500dp">
+        android:verticalSpacing="5dp">
 
         <Button
             android:id="@+id/aBtn"

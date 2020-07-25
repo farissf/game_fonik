@@ -393,55 +393,6 @@
             android:id="@+id/toBtn"
             android:background="@drawable/to"
             android:tag="to" />
-        <Button
-            android:id="@+id/waBtn"
-            android:background="@drawable/wa"
-            android:tag="wa" />
-
-        <Button
-            android:id="@+id/wiBtn"
-            android:background="@drawable/wi"
-            android:tag="wi" />
-
-        <Button
-            android:id="@+id/wuBtn"
-            android:background="@drawable/wu"
-            android:tag="wu" />
-
-        <Button
-            android:id="@+id/weBtn"
-            android:background="@drawable/we"
-            android:tag="we" />
-
-        <Button
-            android:id="@+id/woBtn"
-            android:background="@drawable/wo"
-            android:tag="wo" />
-
-        <Button
-            android:id="@+id/yaBtn"
-            android:background="@drawable/ya"
-            android:tag="ya" />
-
-        <Button
-            android:id="@+id/yiBtn"
-            android:background="@drawable/yi"
-            android:tag="yi" />
-
-        <Button
-            android:id="@+id/yuBtn"
-            android:background="@drawable/yu"
-            android:tag="yu" />
-
-        <Button
-            android:id="@+id/yeBtn"
-            android:background="@drawable/ye"
-            android:tag="ye" />
-
-        <Button
-            android:id="@+id/yoBtn"
-            android:background="@drawable/yo"
-            android:tag="yo" />
 
         <Button
             android:id="@+id/zaBtn"
