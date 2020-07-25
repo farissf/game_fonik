@@ -118,7 +118,7 @@ public class KataActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        bukuBtn = (Button) findViewById(R.id.bebekBtn);
+        bebekBtn = (Button) findViewById(R.id.bebekBtn);
         bebekBtn.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
