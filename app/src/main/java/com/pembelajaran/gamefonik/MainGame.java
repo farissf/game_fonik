@@ -2776,60 +2776,62 @@ public class MainGame extends Activity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-        assert result !=null;
-        DecimalFormat df2 = new DecimalFormat("#.##");
-        String resultVoice = result.get(0);
-        String jawaban =  testText.getText().toString();
+        if (requestCode == 10) {
+            if ((resultCode == RESULT_OK && data != null)) {
+                ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+                assert result != null;
+                DecimalFormat df2 = new DecimalFormat("#.##");
+                String resultVoice = result.get(0);
+                String jawaban = testText.getText().toString();
 
-        if(result.get(0).equalsIgnoreCase(jawaban)){
-            jawabanTxt.setText("100%");
-        }else{
-            Double jumlahHurufsalah = (double) 0;
-            Double jumlahHuruf = (double) jawaban.length();
-            if(resultVoice.length() > jumlahHuruf){
-                jumlahHurufsalah = resultVoice.length() - jumlahHuruf;
-                if(resultVoice.contains(jawaban)){
-                    Double persentaseSalah = 100 - (jumlahHurufsalah / resultVoice.length() * 100);
-                    jawabanTxt.setText(df2.format(persentaseSalah)+"%");
-                }else {
-                    jawabanTxt.setText("0%");
+                if (result.get(0).equalsIgnoreCase(jawaban)) {
+                    jawabanTxt.setText("100%");
+                } else {
+                    Double jumlahHurufsalah = (double) 0;
+                    Double jumlahHuruf = (double) jawaban.length();
+                    if (resultVoice.length() > jumlahHuruf) {
+                        jumlahHurufsalah = resultVoice.length() - jumlahHuruf;
+                        if (resultVoice.contains(jawaban)) {
+                            Double persentaseSalah = 100 - (jumlahHurufsalah / resultVoice.length() * 100);
+                            jawabanTxt.setText(df2.format(persentaseSalah) + "%");
+                        } else {
+                            jawabanTxt.setText("0%");
+                        }
+                    } else {
+                        jumlahHurufsalah = jumlahHuruf - resultVoice.length();
+                        if (jawaban.contains(resultVoice)) {
+                            Double persentaseSalah = 100 - (jumlahHurufsalah / jumlahHuruf * 100);
+                            jawabanTxt.setText(df2.format(persentaseSalah) + "%");
+                        } else {
+                            jawabanTxt.setText("0%");
+                        }
+                    }
+
                 }
-            }else {
-                jumlahHurufsalah = jumlahHuruf - resultVoice.length();
-                if(jawaban.contains(resultVoice)){
-                    Double persentaseSalah = 100 - (jumlahHurufsalah / jumlahHuruf * 100);
-                    jawabanTxt.setText(df2.format(persentaseSalah)+"%");
-                }else {
-                    jawabanTxt.setText("0%");
+                final SweetAlertDialog pDialog;
+                if (jawabanTxt.getText().equals("100%")) {
+                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.SUCCESS_TYPE);
+                    pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu tepat nilai kamu adalah " + jawabanTxt.getText());
+                } else if (!jawabanTxt.getText().equals("100%") && !jawabanTxt.getText().equals("0%")) {
+                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.WARNING_TYPE);
+                    pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu hampir tepat nilai kamu adalah " + jawabanTxt.getText());
+                } else {
+                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.ERROR_TYPE);
+                    pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu kurang tepat nilai kamu adalah " + jawabanTxt.getText());
                 }
+                pDialog.setTitleText("Penilaian!");
+                pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+                pDialog.setConfirmText("Kembali");
+                pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+                    @Override
+                    public void onClick(SweetAlertDialog sDialog) {
+                        finish();
+                    }
+                });
+                pDialog.setCancelable(true);
+                pDialog.show();
             }
-
         }
-        final SweetAlertDialog pDialog;
-        if(jawabanTxt.getText().equals("100%")) {
-            pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.SUCCESS_TYPE);
-            pDialog.setContentText("jawaban kamu tepat nilai kamu adalah " + jawabanTxt.getText());
-        } else if(!jawabanTxt.getText().equals("100%") && !jawabanTxt.getText().equals("0%")){
-            pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.WARNING_TYPE);
-            pDialog.setContentText("jawaban kamu hampir tepat nilai kamu adalah " + jawabanTxt.getText());
-        }
-        else{
-            pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.ERROR_TYPE);
-            pDialog.setContentText("jawaban kamu kurang tepat nilai kamu adalah " + jawabanTxt.getText());
-        }
-        pDialog.setTitleText("Penilaian!");
-        pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
-        pDialog.setConfirmText("Kembali");
-        pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
-            @Override
-            public void onClick(SweetAlertDialog sDialog) {
-                finish();
-            }
-        });
-        pDialog.setCancelable(true);
-        pDialog.show();
-
         //String result =null;
 
        // if(j.compareTo(res) ==0) {
