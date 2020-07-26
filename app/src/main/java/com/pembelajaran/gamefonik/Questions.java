@@ -71,5 +71,13 @@ public class Questions {
     public void setAnswerNr(int answerNr) {
         this.answerNr = answerNr;
     }
+
+    public int getSuara() {
+        return suara;
+    }
+
+    public void setSuara(int suara) {
+        this.suara = suara;
+    }
 }
 

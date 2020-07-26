@@ -36,7 +36,7 @@ public class PlayAudioForAnswers {
 
     }
 
-    private void playMusic(int audiofile) {
+    public void playMusic(int audiofile) {
 
         mediaPlayer = MediaPlayer.create(mContext,audiofile);
 

@@ -57,35 +57,35 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
 
     private void fillQuestionsTable() {
-        int questsuara1 = R.raw.babi;
-        Questions q1 = new Questions("Suara apakah ini ?", questsuara1, "Babi", "Petir", "Lonceng", "Kucing", 1);
+        int questsuara1 = R.raw.sapi;
+        Questions q1 = new Questions("Suara apakah ini ?", questsuara1, "Sapi", "Ular", "Lonceng", "Kucing", 1);
         addQuestions(q1);
-        playSuara(questsuara1);
+//        playSuara(questsuara1);
 
         int questsuara2 = R.raw.kucing;
-        Questions q2 = new Questions("Suara apakah ini ?", questsuara2, "Mobil", "Petir", "Lonceng", "Ayam", 2);
+        Questions q2 = new Questions("Suara apakah ini ?", questsuara2, "Mobil", "Kucing", "Lonceng", "Ayam", 2);
         addQuestions(q2);
-        playSuara(questsuara2);
+//        playSuara(questsuara2);
 
         int questsuara3 = R.raw.kuda;
-        Questions q3 = new Questions("Suara apakah ini ?", questsuara3, "Mobil", "Petir", "Kuda", "Kucing", 3);
+        Questions q3 = new Questions("Suara apakah ini ?", questsuara3, "Mobil", "Domba", "Kuda", "Kucing", 3);
         addQuestions(q3);
-        playSuara(questsuara3);
+//        playSuara(questsuara3);
 
         int questsuara4 = R.raw.ayam;
         Questions q4 = new Questions("Suara apakah ini ?", questsuara4, "Ayam", "Serigala", "Lonceng", "Kucing", 1);
         addQuestions(q4);
-        playSuara(questsuara4);
+//        playSuara(questsuara4);
 
         int questsuara5 = R.raw.serigala;
         Questions q5 = new Questions("Suara apakah ini ?", questsuara5, "Mobil", "Kucing", "Lonceng", "Serigala", 4);
         addQuestions(q5);
-        playSuara(questsuara5);
+//        playSuara(questsuara5);
 
         int questsuara6 = R.raw.gajah;
         Questions q6 = new Questions("Suara apakah ini ?", questsuara6, "Mobil", "Gajah", "Lonceng", "Kucing", 2);
         addQuestions(q6);
-        playSuara(questsuara6);
+//        playSuara(questsuara6);
     }
 
     private void playSuara(final int suara) {
