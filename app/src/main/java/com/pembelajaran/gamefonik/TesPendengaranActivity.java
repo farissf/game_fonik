@@ -139,60 +139,60 @@ public class TesPendengaranActivity extends Activity {
 
                     case R.id.radio_button1:
 
-                        rb1.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.main_green_color));
-                        rb2.setTextColor(Color.TRANSPARENT);
-                        rb3.setTextColor(Color.TRANSPARENT);
-                        rb4.setTextColor(Color.TRANSPARENT);
+                        rb1.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.white));
+                        rb2.setTextColor(Color.BLACK);
+                        rb3.setTextColor(Color.BLACK);
+                        rb4.setTextColor(Color.BLACK);
 
 
 //                        rb1.setBackgroundColor(Color.GREEN);
-//                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
-//                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
+                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
 
                         break;
                     case R.id.radio_button2:
-                        rb2.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.main_green_color));
+                        rb2.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.white));
 
-                        rb1.setTextColor(Color.TRANSPARENT);
-                        rb3.setTextColor(Color.TRANSPARENT);
-                        rb4.setTextColor(Color.TRANSPARENT);
+                        rb1.setTextColor(Color.BLACK);
+                        rb3.setTextColor(Color.BLACK);
+                        rb4.setTextColor(Color.BLACK);
 
 
 //                        rb2.setBackgroundColor(Color.GREEN);
-//                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
-//                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
+                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
 
                         break;
 
                     case R.id.radio_button3:
-                        rb3.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.main_green_color));
-                        rb2.setTextColor(Color.TRANSPARENT);
-                        rb1.setTextColor(Color.TRANSPARENT);
-                        rb4.setTextColor(Color.TRANSPARENT);
+                        rb3.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.white));
+                        rb2.setTextColor(Color.BLACK);
+                        rb1.setTextColor(Color.BLACK);
+                        rb4.setTextColor(Color.BLACK);
 
 //                        rb3.setBackgroundColor(Color.GREEN);
-//                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
-//                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
+                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
 
                         break;
 
                     case R.id.radio_button4:
-                        rb4.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.main_green_color));
-                        rb2.setTextColor(Color.TRANSPARENT);
-                        rb3.setTextColor(Color.TRANSPARENT);
-                        rb1.setTextColor(Color.TRANSPARENT);
+                        rb4.setTextColor(ContextCompat.getColor(getApplicationContext(),R.color.white));
+                        rb2.setTextColor(Color.BLACK);
+                        rb3.setTextColor(Color.BLACK);
+                        rb1.setTextColor(Color.BLACK);
 
 
-//                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
-//                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.when_answer_selected));
+                        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+                        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
 
                         break;
                 }
@@ -224,34 +224,34 @@ public class TesPendengaranActivity extends Activity {
         playAudioForAnswers = new PlayAudioForAnswers(this);
         rbGroup.clearCheck();
 
-//        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
-//        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+        rb1.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+        rb2.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+        rb3.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
+        rb4.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.option_default_background));
 
 
-        rb1.setTextColor(Color.TRANSPARENT);
-        rb2.setTextColor(Color.TRANSPARENT);
-        rb3.setTextColor(Color.TRANSPARENT);
-        rb4.setTextColor(Color.TRANSPARENT);
+        rb1.setTextColor(Color.BLACK);
+        rb2.setTextColor(Color.BLACK);
+        rb3.setTextColor(Color.BLACK);
+        rb4.setTextColor(Color.BLACK);
 
 
         if (questionCounter < questionTotalCount) {
             currentQuestions = questionList.get(questionCounter);
             textViewQuestion.setText(currentQuestions.getQuestion());
 
-            int id1 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption1().toLowerCase(), "drawable", getApplicationContext().getPackageName());
-            int id2 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption2().toLowerCase(), "drawable", getApplicationContext().getPackageName());
-            int id3 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption3().toLowerCase(), "drawable", getApplicationContext().getPackageName());
-            int id4 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption4().toLowerCase(), "drawable", getApplicationContext().getPackageName());
+//            int id1 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption1().toLowerCase(), "drawable", getApplicationContext().getPackageName());
+//            int id2 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption2().toLowerCase(), "drawable", getApplicationContext().getPackageName());
+//            int id3 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption3().toLowerCase(), "drawable", getApplicationContext().getPackageName());
+//            int id4 = getApplicationContext().getResources().getIdentifier(currentQuestions.getOption4().toLowerCase(), "drawable", getApplicationContext().getPackageName());
             rb1.setText(currentQuestions.getOption1());
-            rb1.setBackgroundResource(id1);
+//            rb1.setBackgroundResource(id1);
             rb2.setText(currentQuestions.getOption2());
-            rb2.setBackgroundResource(id2);
+//            rb2.setBackgroundResource(id2);
             rb3.setText(currentQuestions.getOption3());
-            rb3.setBackgroundResource(id3);
+//            rb3.setBackgroundResource(id3);
             rb4.setText(currentQuestions.getOption4());
-            rb4.setBackgroundResource(id4);
+//            rb4.setBackgroundResource(id4);
             suara = "";
             if(currentQuestions.getAnswerNr() == 1){
                 suara = currentQuestions.getOption1().toLowerCase();
