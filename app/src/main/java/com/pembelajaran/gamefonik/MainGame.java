@@ -1,6 +1,7 @@
 package com.pembelajaran.gamefonik;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -27,6 +28,8 @@ public class MainGame extends Activity {
     TextView soal;
     private String textA;
     TextView textView;
+    TextView penanganan;
+    Dialog penanganan_dialog;
 
 
     SpeechRecognizer mSpeechRecognizer;
@@ -54,6 +57,7 @@ public class MainGame extends Activity {
 
         testText.setText(Objects.requireNonNull(getIntent().getExtras()).getString("id"));
         soal = findViewById(R.id.soalimg);
+        penanganan = findViewById(R.id.penangananImg);
         String data = Objects.requireNonNull(getIntent().getExtras()).getString("id");
         assert data != null;
         switch (data) {
@@ -73,9 +77,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_a)
+                                .setTitleText("Pembelajaran huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.ainfo)
                                 .show();
                     }
                 });
@@ -96,9 +100,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_b)
+                                .setTitleText("Pembelajaran huruf B")
+                                .setContentText("Kembungkan pipi seakan meniup balon dan ucapkan 'Beh'")
+                                .setCustomImage(R.drawable.binfo)
                                 .show();
                     }
                 });
@@ -119,9 +123,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_c)
+                                .setTitleText("Pembelajaran huruf C")
+                                .setContentText("Rasakan dengan telunjuk kanan udara yang keluarketika mengucapkan 'ceh'")
+                                .setCustomImage(R.drawable.cinfo)
                                 .show();
                     }
                 });
@@ -142,9 +146,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_d)
+                                .setTitleText("Pembelajaran huruf D")
+                                .setContentText("Rasakan dengan telunjuk kanan udara yang keluarketika mengucapkan 'deh'")
+                                .setCustomImage(R.drawable.dinfo)
                                 .show();
                     }
                 });
@@ -165,9 +169,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_e)
+                                .setTitleText("Pembelajaran huruf E")
+                                .setContentText("Bentuk huruf E batasi dengan ibu jari dan telunjuk, ucapkan 'Eeee'")
+                                .setCustomImage(R.drawable.einfo)
                                 .show();
                     }
                 });
@@ -188,9 +192,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_f)
+                                .setTitleText("Pembelajaran huruf F")
+                                .setContentText("Ucapkan 'Eff' dengan cara bibir bawah tempelkan pada gigi atas dan dorong mengeluarkan udara sambil mengucapkan 'Ef'")
+                                .setCustomImage(R.drawable.finfo)
                                 .show();
                     }
                 });
@@ -211,9 +215,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_g)
+                                .setTitleText("Pembelajaran huruf G")
+                                .setContentText("Ucapkan 'Geh..' dan rasakan getaran di dada.")
+                                .setCustomImage(R.drawable.ginfo)
                                 .show();
                     }
                 });
@@ -234,9 +238,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_h)
+                                .setTitleText("Pembelajaran huruf H")
+                                .setContentText("Buka mulut, ucapkan 'Ha..' dan rasakan hembusan udara dengan telapak tangan ketika mengucapkan 'Ha..'")
+                                .setCustomImage(R.drawable.hinfo)
                                 .show();
                     }
                 });
@@ -257,9 +261,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_i)
+                                .setTitleText("Pembelajaran huruf I")
+                                .setContentText("Telapak tangan kanan diatas ubun - ubun, dn ucpkan 'iii...' dan rasakan getarannya.")
+                                .setCustomImage(R.drawable.iinfo)
                                 .show();
                     }
                 });
@@ -280,9 +284,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_j)
+                                .setTitleText("Pembelajaran huruf J")
+                                .setContentText("Buka mulut, ucapkan 'Jeh..' dan rasakan hembusan udara dengan telapak tangan ketika mengucapkan 'Jeh..'")
+                                .setCustomImage(R.drawable.jinfo)
                                 .show();
                     }
                 });
@@ -303,9 +307,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_k)
+                                .setTitleText("Pembelajaran huruf K")
+                                .setContentText("Ucapkan 'Keh..'. Rasakan getaran pada tenggorokan dengan menempelkan tangan pada tenggorokan")
+                                .setCustomImage(R.drawable.kinfo)
                                 .show();
                     }
                 });
@@ -326,9 +330,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
+                                .setTitleText("Pembelajaran huruf L")
                                 .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_l)
+                                .setCustomImage(R.drawable.linfo)
                                 .show();
                     }
                 });
@@ -349,9 +353,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_m)
+                                .setTitleText("Pembelajaran huruf M")
+                                .setContentText("Rapatkan bibir, lipat ke dalam. Dan ucapkan 'Mmmm...' kemudian rasakan getaran di pipi menggunakan telapak tangan")
+                                .setCustomImage(R.drawable.minfo)
                                 .show();
                     }
                 });
@@ -372,9 +376,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_n)
+                                .setTitleText("Pembelajaran huruf N")
+                                .setContentText("Tekan hidung sebelah kanan dengan telunjuk kanan, rasakan getaran dengan mengucapkan 'Nnn...'")
+                                .setCustomImage(R.drawable.ninfo)
                                 .show();
                     }
                 });
@@ -395,9 +399,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_o)
+                                .setTitleText("Pembelajaran huruf O")
+                                .setContentText("Ucapkan O dengan cara membundarkan bibir dengan jelas.")
+                                .setCustomImage(R.drawable.oinfo)
                                 .show();
                     }
                 });
@@ -418,9 +422,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_p)
+                                .setTitleText("Pembelajaran huruf P")
+                                .setContentText("Rasakan udara di telapak tangan ketika mengucapkan 'Peh..'.")
+                                .setCustomImage(R.drawable.pinfo)
                                 .show();
                     }
                 });
@@ -441,9 +445,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.q)
+                                .setTitleText("Pembelajaran huruf Q")
+                                .setContentText("Ucapkan 'qiu...' dan tempelkan pangkal lidah ke geraham.")
+                                .setCustomImage(R.drawable.qinfo)
                                 .show();
                     }
                 });
@@ -464,9 +468,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_r)
+                                .setTitleText("Pembelajaran huruf R")
+                                .setContentText("Getarkan bibir seperti membunyikan suara derum motor 'Brrrr...'")
+                                .setCustomImage(R.drawable.rinfo)
                                 .show();
                     }
                 });
@@ -487,9 +491,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_s)
+                                .setTitleText("Pembelajaran huruf S")
+                                .setContentText("Desiskan pengucapan huruf S,'Sssss...' rasakan dengan telunjuk kanan udara yang keluar pada saat mengeluarkan desis")
+                                .setCustomImage(R.drawable.sinfo)
                                 .show();
                     }
                 });
@@ -510,9 +514,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_t)
+                                .setTitleText("Pembelajaran huruf T")
+                                .setContentText("Gigit ujung lidah, kemudian ucapkan 'Teh...'.")
+                                .setCustomImage(R.drawable.tinfo)
                                 .show();
                     }
                 });
@@ -533,9 +537,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_u)
+                                .setTitleText("Pembelajaran huruf U")
+                                .setContentText("Monyongkan mulut membentuk kata U dengan jelas, ucapkana 'Uuu...'")
+                                .setCustomImage(R.drawable.uinfo)
                                 .show();
                     }
                 });
@@ -556,9 +560,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_v)
+                                .setTitleText("Pembelajaran huruf U")
+                                .setContentText("tempelkan gigi atas ke bibir bawah dan dorong udara ke luar. Ucapkan 'Vi...'")
+                                .setCustomImage(R.drawable.vinfo)
                                 .show();
                     }
                 });
@@ -579,9 +583,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.soal_w)
+                                .setTitleText("Pembelajaran huruf W")
+                                .setContentText("Letakkan ujung gigi di bibir bawah dan ucapkan huruf 'We..'")
+                                .setCustomImage(R.drawable.winfo)
                                 .show();
                     }
                 });
@@ -602,9 +606,9 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
-                                .setCustomImage(R.drawable.x)
+                                .setTitleText("Pembelajaran huruf X")
+                                .setContentText("Sentuh pangkal lidah ke geraham. Ucapkan 'Eks..' dan rasakan udara dengan telunjuk kanan ketika mengucapkan 'Eks...'")
+                                .setCustomImage(R.drawable.xinfo)
                                 .show();
                     }
                 });
@@ -625,8 +629,8 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setTitleText("Pembelajaran huruf Y")
+                                .setContentText("Buka mulut, tempelkan lidah di gigi geraham atas dan ucapkan 'Ye..'")
                                 .setCustomImage(R.drawable.y)
                                 .show();
                     }
@@ -648,8 +652,8 @@ public class MainGame extends Activity {
                     @Override
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Gambar Pengucapan")
-                                .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
+                                .setTitleText("Pembelajaran huruf Z")
+                                .setContentText("Buka mulut, rapatkan gigi atas dan bawah. Dorong oleh lidah. Ucapkan 'Zet' berakhir dengan ujung lidah di gigit")
                                 .setCustomImage(R.drawable.soal_z)
                                 .show();
                     }

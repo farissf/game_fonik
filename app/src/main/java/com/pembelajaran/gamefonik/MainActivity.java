@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
     }
 
     public void terapi(View view){
-        Intent intent = new Intent(this, Login_Activity.class);
+        Intent intent = new Intent(this, TerapiActivity.class);
         startActivity(intent);
     }
     public void carapenggunaan (View view){

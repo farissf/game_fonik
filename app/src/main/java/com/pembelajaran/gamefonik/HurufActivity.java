@@ -11,14 +11,16 @@ import android.widget.GridLayout;
 import android.widget.GridView;
 
 public class HurufActivity extends AppCompatActivity {
+
     private Button buttona,buttonb,buttonc,buttond,buttone,buttonf,buttong,buttonh,buttoni,buttonj,
             buttonk,buttonl,buttonm,buttonn,buttono,buttonp,buttonq,buttonr,buttons,buttont,buttonu,
             buttonv,buttonw,buttonx,buttony,buttonz;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_huruf);
-
 //        Button buttons[] = new Button [26];
         buttona  = (Button)findViewById(R.id.aBtn);
         buttona.setOnClickListener(new Button.OnClickListener() {

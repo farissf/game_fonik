@@ -33,26 +33,6 @@ public class TerapiActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.terapi_activity);
-
-        namaSiswa = findViewById(R.id.namaSiswa);
-        imageView = findViewById(R.id.fProfile);
-
-        db = new DatabaseHelper(this);
-        String query = "SELECT nama_lengkap FROM t_user";
-        Cursor database = db.getData(query);
-        while (database.moveToNext()) {
-            String nama_lengkap = database.getString(0);
-            namaSiswa.setText(nama_lengkap);
-        }
-
-        String query1 = "SELECT foto_profil FROM t_user";
-        Cursor database2 = db.getData(query1);
-        while (database2.moveToNext()) {
-            byte[] foto_profil = database2.getBlob(0);
-            Bitmap bitmap = BitmapFactory.decodeByteArray(foto_profil, 0, foto_profil.length);
-            imageView.setImageBitmap(bitmap);
-
-        }
     }
 
     public void perkembangan(View view){
