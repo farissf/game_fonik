@@ -63,22 +63,22 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 //        playSuara(questsuara1);
 
         int questsuara2 = R.raw.kucing;
-        Questions q2 = new Questions("Suara apakah ini ?", questsuara2, "Mobil", "Kucing", "Lonceng", "Ayam", 2);
+        Questions q2 = new Questions("Suara apakah ini ?", questsuara2, "", "", "", "", 2);
         addQuestions(q2);
 //        playSuara(questsuara2);
 
         int questsuara3 = R.raw.kuda;
-        Questions q3 = new Questions("Suara apakah ini ?", questsuara3, "Mobil", "Domba", "Kuda", "Kucing", 3);
+        Questions q3 = new Questions("Suara apakah ini ?", questsuara3, "", "", "", "", 3);
         addQuestions(q3);
 //        playSuara(questsuara3);
 
         int questsuara4 = R.raw.ayam;
-        Questions q4 = new Questions("Suara apakah ini ?", questsuara4, "Ayam", "Serigala", "Lonceng", "Kucing", 1);
+        Questions q4 = new Questions("Suara apakah ini ?", questsuara4, "", "", "", "", 1);
         addQuestions(q4);
 //        playSuara(questsuara4);
 
         int questsuara5 = R.raw.serigala;
-        Questions q5 = new Questions("Suara apakah ini ?", questsuara5, "Mobil", "Kucing", "Lonceng", "Serigala", 4);
+        Questions q5 = new Questions("Suara apakah ini ?", questsuara5, "", "", "", "", 4);
         addQuestions(q5);
 //        playSuara(questsuara5);
 

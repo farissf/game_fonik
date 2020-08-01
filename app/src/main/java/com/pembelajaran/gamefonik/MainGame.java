@@ -83,6 +83,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button ainfo1 = findViewById(R.id.infoBtn1);
+                ainfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_a)
+                                .show();
+                    }
+                });
                 break;
             case "b":
                 jawabanHuruf = "be";
@@ -103,6 +115,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf B")
                                 .setContentText("Kembungkan pipi seakan meniup balon dan ucapkan 'Beh'")
                                 .setCustomImage(R.drawable.binfo)
+                                .show();
+                    }
+                });
+                Button binfo1 = findViewById(R.id.infoBtn1);
+                binfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf B")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_b)
                                 .show();
                     }
                 });
@@ -129,6 +153,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button cinfo1 = findViewById(R.id.infoBtn1);
+                cinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf C")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_c)
+                                .show();
+                    }
+                });
                 break;
             case "d":
                 jawabanHuruf = "de";
@@ -149,6 +185,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf D")
                                 .setContentText("Rasakan dengan telunjuk kanan udara yang keluarketika mengucapkan 'deh'")
                                 .setCustomImage(R.drawable.dinfo)
+                                .show();
+                    }
+                });
+                Button dinfo1 = findViewById(R.id.infoBtn1);
+                dinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_d)
                                 .show();
                     }
                 });
@@ -175,6 +223,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button einfo1 = findViewById(R.id.infoBtn1);
+                einfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_e)
+                                .show();
+                    }
+                });
                 break;
             case "f":
                 jawabanHuruf = "f";
@@ -195,6 +255,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf F")
                                 .setContentText("Ucapkan 'Eff' dengan cara bibir bawah tempelkan pada gigi atas dan dorong mengeluarkan udara sambil mengucapkan 'Ef'")
                                 .setCustomImage(R.drawable.finfo)
+                                .show();
+                    }
+                });
+                Button finfo1 = findViewById(R.id.infoBtn1);
+                finfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_f)
                                 .show();
                     }
                 });
@@ -221,6 +293,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button ginfo1 = findViewById(R.id.infoBtn1);
+                ginfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_g)
+                                .show();
+                    }
+                });
                 break;
             case "h":
                 jawabanHuruf = "ha";
@@ -241,6 +325,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf H")
                                 .setContentText("Buka mulut, ucapkan 'Ha..' dan rasakan hembusan udara dengan telapak tangan ketika mengucapkan 'Ha..'")
                                 .setCustomImage(R.drawable.hinfo)
+                                .show();
+                    }
+                });
+                Button hinfo1 = findViewById(R.id.infoBtn1);
+                hinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_h)
                                 .show();
                     }
                 });
@@ -267,6 +363,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button iinfo1 = findViewById(R.id.infoBtn1);
+                iinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_i)
+                                .show();
+                    }
+                });
                 break;
             case "j":
                 jawabanHuruf = "je";
@@ -287,6 +395,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf J")
                                 .setContentText("Buka mulut, ucapkan 'Jeh..' dan rasakan hembusan udara dengan telapak tangan ketika mengucapkan 'Jeh..'")
                                 .setCustomImage(R.drawable.jinfo)
+                                .show();
+                    }
+                });
+                Button jinfo1 = findViewById(R.id.infoBtn1);
+                jinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_j)
                                 .show();
                     }
                 });
@@ -313,6 +433,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button kinfo1 = findViewById(R.id.infoBtn1);
+                kinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_k)
+                                .show();
+                    }
+                });
                 break;
             case "l":
                 jawabanHuruf = "l";
@@ -333,6 +465,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf L")
                                 .setContentText(". Info pengucapan & Cara penanggulangan ucapan")
                                 .setCustomImage(R.drawable.linfo)
+                                .show();
+                    }
+                });
+                Button linfo1 = findViewById(R.id.infoBtn1);
+                linfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_l)
                                 .show();
                     }
                 });
@@ -359,6 +503,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button minfo1 = findViewById(R.id.infoBtn1);
+                minfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_m)
+                                .show();
+                    }
+                });
                 break;
             case "n":
                 jawabanHuruf = "n";
@@ -379,6 +535,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf N")
                                 .setContentText("Tekan hidung sebelah kanan dengan telunjuk kanan, rasakan getaran dengan mengucapkan 'Nnn...'")
                                 .setCustomImage(R.drawable.ninfo)
+                                .show();
+                    }
+                });
+                Button ninfo1 = findViewById(R.id.infoBtn1);
+                ninfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_n)
                                 .show();
                     }
                 });
@@ -405,6 +573,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button oinfo1 = findViewById(R.id.infoBtn1);
+                oinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_o)
+                                .show();
+                    }
+                });
                 break;
             case "p":
                 jawabanHuruf = "pe";
@@ -425,6 +605,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf P")
                                 .setContentText("Rasakan udara di telapak tangan ketika mengucapkan 'Peh..'.")
                                 .setCustomImage(R.drawable.pinfo)
+                                .show();
+                    }
+                });
+                Button pinfo1 = findViewById(R.id.infoBtn1);
+                pinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_p)
                                 .show();
                     }
                 });
@@ -451,6 +643,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button qinfo1 = findViewById(R.id.infoBtn1);
+                qinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_k)
+                                .show();
+                    }
+                });
                 break;
             case "r":
                 jawabanHuruf = "r";
@@ -471,6 +675,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf R")
                                 .setContentText("Getarkan bibir seperti membunyikan suara derum motor 'Brrrr...'")
                                 .setCustomImage(R.drawable.rinfo)
+                                .show();
+                    }
+                });
+                Button rinfo1 = findViewById(R.id.infoBtn1);
+                rinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_r)
                                 .show();
                     }
                 });
@@ -497,6 +713,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button sinfo1 = findViewById(R.id.infoBtn1);
+                sinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_s)
+                                .show();
+                    }
+                });
                 break;
             case "t":
                 jawabanHuruf = "te";
@@ -517,6 +745,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf T")
                                 .setContentText("Gigit ujung lidah, kemudian ucapkan 'Teh...'.")
                                 .setCustomImage(R.drawable.tinfo)
+                                .show();
+                    }
+                });
+                Button tinfo1 = findViewById(R.id.infoBtn1);
+                tinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_t)
                                 .show();
                     }
                 });
@@ -543,6 +783,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button uinfo1 = findViewById(R.id.infoBtn1);
+                uinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_u)
+                                .show();
+                    }
+                });
                 break;
             case "v":
                 jawabanHuruf = "v";
@@ -563,6 +815,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf U")
                                 .setContentText("tempelkan gigi atas ke bibir bawah dan dorong udara ke luar. Ucapkan 'Vi...'")
                                 .setCustomImage(R.drawable.vinfo)
+                                .show();
+                    }
+                });
+                Button vinfo1 = findViewById(R.id.infoBtn1);
+                vinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_v)
                                 .show();
                     }
                 });
@@ -589,6 +853,18 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+                Button winfo1 = findViewById(R.id.infoBtn1);
+                winfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_w)
+                                .show();
+                    }
+                });
                 break;
             case "x":
                 jawabanHuruf = "x";
@@ -609,6 +885,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf X")
                                 .setContentText("Sentuh pangkal lidah ke geraham. Ucapkan 'Eks..' dan rasakan udara dengan telunjuk kanan ketika mengucapkan 'Eks...'")
                                 .setCustomImage(R.drawable.xinfo)
+                                .show();
+                    }
+                });
+                Button xinfo1 = findViewById(R.id.infoBtn1);
+                xinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_k)
                                 .show();
                     }
                 });
@@ -635,6 +923,7 @@ public class MainGame extends Activity {
                                 .show();
                     }
                 });
+
                 break;
             case "z":
                 jawabanHuruf = "zet";
@@ -655,6 +944,18 @@ public class MainGame extends Activity {
                                 .setTitleText("Pembelajaran huruf Z")
                                 .setContentText("Buka mulut, rapatkan gigi atas dan bawah. Dorong oleh lidah. Ucapkan 'Zet' berakhir dengan ujung lidah di gigit")
                                 .setCustomImage(R.drawable.zinfo)
+                                .show();
+                    }
+                });
+                Button zinfo1 = findViewById(R.id.infoBtn1);
+                zinfo1.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                .setTitleText("Pengucapan huruf A")
+                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setCustomImage(R.drawable.soal_z)
                                 .show();
                     }
                 });

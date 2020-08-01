@@ -103,14 +103,14 @@ public class TerapiActivity extends Activity {
                 final SweetAlertDialog pDialog = new SweetAlertDialog(TerapiActivity.this, SweetAlertDialog.WARNING_TYPE);
                 pDialog.setTitleText("Peringatan!");
                 pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
-                pDialog.setContentText("Apakah anda ingin keluar dari aplikasi ini ?");
+                pDialog.setContentText("Apakah anda ingin keluar dari menu ini ?");
                 pDialog.setConfirmText("Ya");
                 pDialog.setCancelText("Tidak");
                 pDialog.setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                     @Override
                     public void onClick(SweetAlertDialog sDialog) {
                         finish();
-                        Intent intent = new Intent(TerapiActivity.this,Login_Activity.class);
+                        Intent intent = new Intent(TerapiActivity.this,MainActivity.class);
                         startActivity(intent);
                     }
                 });
