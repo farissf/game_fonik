@@ -62,15 +62,15 @@ public class ResultActivity extends Activity {
 
         Intent intent = getIntent();
 
-        int score = intent.getIntExtra("UserScore",0);
-        int totalQuestion = intent.getIntExtra("TotalQuestion",0);
-        int correctQues = intent.getIntExtra("CorrectQues",0);
-        int wrongQues = intent.getIntExtra("WrongQues",0);
+        int score = intent.getIntExtra("Skor kamu",0);
+        int totalQuestion = intent.getIntExtra("Pertanyaan",0);
+        int correctQues = intent.getIntExtra("Benar",0);
+        int wrongQues = intent.getIntExtra("Salah",0);
 
 
-        txtTotalQuizQues.setText("Total Ques: " + String.valueOf(totalQuestion));
-        txtCorrectQues.setText("Correct: " + String.valueOf(correctQues));
-        txtWrongQues.setText("Wrong: " + String.valueOf(wrongQues));
+        txtTotalQuizQues.setText("Total Pertanyaan: " + String.valueOf(totalQuestion));
+        txtCorrectQues.setText("Benar: " + String.valueOf(correctQues));
+        txtWrongQues.setText("Salah: " + String.valueOf(wrongQues));
 
         if (score > highScore){
 
@@ -83,7 +83,7 @@ public class ResultActivity extends Activity {
     private void updatHighScore(int newHighScore) {
 
         highScore = newHighScore;
-        txtHighScore.setText("High Score: " + String.valueOf(highScore));
+        txtHighScore.setText("Skor tertinggi: " + String.valueOf(highScore));
 
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERRENCE,MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -97,7 +97,7 @@ public class ResultActivity extends Activity {
 
         SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERRENCE,MODE_PRIVATE);
         highScore = sharedPreferences.getInt(SHARED_PREFERRENCE_HIGH_SCORE,0);
-        txtHighScore.setText("High Score: " + String.valueOf(highScore));
+        txtHighScore.setText("Skor tertinggi: " + String.valueOf(highScore));
 
     }
 

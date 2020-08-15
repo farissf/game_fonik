@@ -1,14 +1,18 @@
 package com.pembelajaran.gamefonik;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,12 +28,14 @@ import java.util.Objects;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class MainGame extends Activity {
+
+    private static final String menekantombol = "";
+
     private TextView jawabanTxt,testText;
     TextView soal;
     private String textA;
     TextView textView;
     TextView penanganan;
-    Dialog penanganan_dialog;
 
 
     SpeechRecognizer mSpeechRecognizer;
@@ -57,7 +63,7 @@ public class MainGame extends Activity {
 
         testText.setText(Objects.requireNonNull(getIntent().getExtras()).getString("id"));
         soal = findViewById(R.id.soalimg);
-        penanganan = findViewById(R.id.penangananImg);
+
         String data = Objects.requireNonNull(getIntent().getExtras()).getString("id");
         assert data != null;
         switch (data) {
@@ -76,13 +82,15 @@ public class MainGame extends Activity {
 
                     @Override
                     public void onClick(View v) {
-                        new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
-                                .setTitleText("Pembelajaran huruf A")
-                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
-                                .setCustomImage(R.drawable.ainfo)
-                                .show();
+                        showDialog();
+                        //new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
+                                //.setTitleText("Pembelajaran huruf A")
+                                //.setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                //.setCustomImage(R.drawable.ainfo)
+                                //.show();
                     }
                 });
+
                 Button ainfo1 = findViewById(R.id.infoBtn1);
                 ainfo1.setOnClickListener(new View.OnClickListener() {
 
@@ -125,7 +133,7 @@ public class MainGame extends Activity {
                     public void onClick(View v) {
                         new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE)
                                 .setTitleText("Pengucapan huruf B")
-                                .setContentText("Punggung tangan kanan di bawah dagu dan rasakan getarannya")
+                                .setContentText("Bibir atas dan bibir bawah tertutup ketat, namun gigi atas dan bawah terbuka.  ")
                                 .setCustomImage(R.drawable.soal_b)
                                 .show();
                     }
@@ -4037,6 +4045,23 @@ public class MainGame extends Activity {
 
     }
 
+    void showDialog(){
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View view = inflater.inflate(R.layout.penanganan_dialog,null);
+
+        Button kembaliBtn = view.findViewById(R.id.btnKembaliDialog);
+
+        kembaliBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .create();
+    }
+
     @Override
     public void onPause() {
         try {
@@ -4475,14 +4500,23 @@ public class MainGame extends Activity {
                 }
                 final SweetAlertDialog pDialog;
                 if (jawabanTxt.getText().equals("100%")) {
-                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.SUCCESS_TYPE);
-                    pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu tepat nilai kamu adalah " + jawabanTxt.getText());
+                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE);
+                    pDialog.setCustomImage(R.drawable.star3);
+                    pDialog.setContentText("jawaban kamu " + resultVoice + ", Selamat, ya. Dan nilai kamu adalah " + jawabanTxt.getText());
+                    //pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.SUCCESS_TYPE);
+                    //pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu tepat nilai kamu adalah " + jawabanTxt.getText());
                 } else if (!jawabanTxt.getText().equals("100%") && !jawabanTxt.getText().equals("0%")) {
-                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.WARNING_TYPE);
-                    pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu hampir tepat nilai kamu adalah " + jawabanTxt.getText());
+                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE);
+                    pDialog.setCustomImage(R.drawable.star2);
+                    pDialog.setContentText("jawaban kamu " + resultVoice + ", Lumayan. Nilai kamu adalah " + jawabanTxt.getText());
+                    //pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.WARNING_TYPE);
+                    //pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu hampir tepat nilai kamu adalah " + jawabanTxt.getText());
                 } else {
-                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.ERROR_TYPE);
-                    pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu kurang tepat nilai kamu adalah " + jawabanTxt.getText());
+                    pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.CUSTOM_IMAGE_TYPE);
+                    pDialog.setCustomImage(R.drawable.star1);
+                    pDialog.setContentText("Jawaban kamu " + resultVoice + ", Coba lagi ya. Nilai kamu adalah " + jawabanTxt.getText());
+                    //pDialog = new SweetAlertDialog(MainGame.this, SweetAlertDialog.ERROR_TYPE);
+                    //pDialog.setContentText("jawaban kamu " + resultVoice + ", kamu kurang tepat nilai kamu adalah " + jawabanTxt.getText());
                 }
                 pDialog.setTitleText("Penilaian!");
                 pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));

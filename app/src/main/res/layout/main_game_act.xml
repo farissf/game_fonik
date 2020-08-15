@@ -29,26 +29,28 @@
 
         <Button
             android:id="@+id/suaraBtn"
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginLeft="0dp"
-            android:background="@drawable/audio"
-             />
+            android:background="@drawable/audio" />
+
         <Button
             android:id="@+id/infoBtn1"
-            android:layout_width="90dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:text="info 1"
-            />
+            android:background="@color/main_orange_color"
+            android:text="Pengucapan"
+            android:textColor="@color/white"
+            android:visibility="invisible"/>
 
         <Button
             android:id="@+id/infoBtn"
-            android:layout_width="90dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:background="@color/main_orange_color"
-            android:text="Info 2"
+            android:text="Pengucapan"
             android:textColor="@color/white" />
     </LinearLayout>
 

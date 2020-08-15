@@ -31,19 +31,11 @@
             <Button
                 android:id="@+id/petir"
                 android:text="Petir" />
-            <Button
-                android:id="@+id/peluit"
-                android:text="Peluit" />
-
+            
             <Button
                 android:id="@+id/api"
                 android:text="Api" />
-            <Button
-                android:id="@+id/piano"
-                android:text="Piano" />
-            <Button
-                android:id="@+id/suling"
-                android:text="Suling" />
+
 
         </GridLayout>
     </ScrollView>
