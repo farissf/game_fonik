@@ -210,7 +210,7 @@ public class TesPendengaranActivity extends Activity {
                         quizOperation();
                     } else {
 
-                        Toast.makeText(TesPendengaranActivity.this, "Please Select the Answer ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(TesPendengaranActivity.this, "Pilih dahulu jawabannya ", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
@@ -266,9 +266,9 @@ public class TesPendengaranActivity extends Activity {
             playAudioForAnswers.playMusic(suaraMp3);
             questionCounter++;
             answerd = false;
-            buttonConfirmNext.setText("Confirm");
+            buttonConfirmNext.setText("Ok");
 
-            textViewQuestionCount.setText("Questions: " + questionCounter + "/" + questionTotalCount);
+            textViewQuestionCount.setText("Pertanyaan: " + questionCounter + "/" + questionTotalCount);
 
 
             timeleftinMillis = COUNTDOWN_IN_MILLIS;
@@ -282,7 +282,7 @@ public class TesPendengaranActivity extends Activity {
             // If Number of Questions Finishes then we need to finish the Quiz and Shows the User Quiz Performance
 
 
-            Toast.makeText(this, "Quiz Finshed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Kuis Selesai", Toast.LENGTH_SHORT).show();
 
             rb1.setClickable(false);
             rb2.setClickable(false);
@@ -326,7 +326,7 @@ public class TesPendengaranActivity extends Activity {
                     correctAns++;
 
                     score += 10;
-                    textViewScore.setText("Score: " + String.valueOf(score));
+                    textViewScore.setText("Skor: " + String.valueOf(score));
                     correctDialog.correctDialog(score,this);
 
                     FLAG = 1;
@@ -349,7 +349,7 @@ public class TesPendengaranActivity extends Activity {
                     rb2.setTextColor(Color.BLACK);
                     correctAns++;
                     score += 10;
-                    textViewScore.setText("Score: " + String.valueOf(score));
+                    textViewScore.setText("Skor: " + String.valueOf(score));
                     correctDialog.correctDialog(score,this);
 
                     FLAG = 1;
@@ -380,7 +380,7 @@ public class TesPendengaranActivity extends Activity {
 
 
                     score += 10;
-                    textViewScore.setText("Score: " + String.valueOf(score));
+                    textViewScore.setText("Skor: " + String.valueOf(score));
                     correctDialog.correctDialog(score,this);
 
                     FLAG = 1;
@@ -411,7 +411,7 @@ public class TesPendengaranActivity extends Activity {
 
 
                     score += 10;
-                    textViewScore.setText("Score: " + String.valueOf(score));
+                    textViewScore.setText("Skor: " + String.valueOf(score));
                     correctDialog.correctDialog(score,this);
 
                     FLAG = 1;
@@ -433,7 +433,7 @@ public class TesPendengaranActivity extends Activity {
                 break;
         }
         if (questionCounter == questionTotalCount) {
-            buttonConfirmNext.setText("Confirm and Finish");
+            buttonConfirmNext.setText("Selesai");
         }
     }
 
@@ -566,10 +566,10 @@ public class TesPendengaranActivity extends Activity {
 
         Intent resultData = new Intent(TesPendengaranActivity.this,ResultActivity.class);
 
-        resultData.putExtra("UserScore",score);
-        resultData.putExtra("TotalQuestion",questionTotalCount);
-        resultData.putExtra("CorrectQues",correctAns);
-        resultData.putExtra("WrongQues",wrongAns);
+        resultData.putExtra("Skor Kamu",score);
+        resultData.putExtra("Banyak Pertanyaan",questionTotalCount);
+        resultData.putExtra("Benar",correctAns);
+        resultData.putExtra("Salah",wrongAns);
         startActivity(resultData);
 
     }

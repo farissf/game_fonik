@@ -8,7 +8,7 @@
     android:gravity="center_horizontal"
     android:background="@drawable/bg">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_marginTop="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,11 +19,11 @@
             android:layout_width="118dp"
             android:layout_height="45dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="100dp"
+            android:layout_marginRight="200dp"
             android:background="@drawable/button_keluar"
             android:onClick="keluar" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <Button
         android:layout_width="160dp"
@@ -51,7 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/katabtn"
-        android:onClick="kata" />
+        android:onClick="kata"
+        />
 
 </LinearLayout>
 

@@ -9,17 +9,14 @@
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <EditText
+    <ImageView
+        android:background="@drawable/judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aplikasi pembelajaran metode fonik"
         android:layout_marginTop="110dp"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SLB-B  Negri  Cicendo  Kota  Bandung"
-        />
+
 
     <Button
         android:layout_width="wrap_content"
