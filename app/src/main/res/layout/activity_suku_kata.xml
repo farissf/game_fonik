@@ -7,6 +7,7 @@
     android:numColumns="3"
     android:orientation="horizontal"
     android:visibility="visible"
+    android:fillViewport="true"
     tools:context=".SukuKataActivity">
 
     <GridLayout
@@ -26,398 +27,527 @@
 
         <Button
             android:id="@+id/biBtn"
-            android:layout_height="wrap_content"
             android:background="@drawable/bi"
-            android:tag="bi" />
+            android:tag="bi"
+            android:layout_marginLeft="40dp"/>
 
         <Button
             android:id="@+id/buBtn"
             android:background="@drawable/bu"
-            android:tag="bu" />
+            android:tag="bu"
+            android:layout_gravity="right" />
 
         <Button
             android:id="@+id/beBtn"
             android:background="@drawable/be"
-            android:tag="be" />
+            android:tag="be"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/boBtn"
             android:background="@drawable/bo"
-            android:tag="bo" />
+            android:tag="bo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/caBtn"
             android:background="@drawable/ca"
-            android:tag="ca" />
+            android:tag="ca"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/ciBtn"
             android:background="@drawable/ci"
-            android:tag="ci" />
+            android:tag="ci"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/cuBtn"
             android:background="@drawable/cu"
-            android:tag="cu" />
+            android:tag="cu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/ceBtn"
             android:background="@drawable/ce"
-            android:tag="ce" />
+            android:tag="ce"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/coBtn"
             android:background="@drawable/co"
-            android:tag="co" />
+            android:tag="co"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/daBtn"
             android:background="@drawable/da"
-            android:tag="da" />
+            android:tag="da"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/diBtn"
             android:background="@drawable/di"
-            android:tag="di" />
+            android:tag="di"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/duBtn"
             android:background="@drawable/du"
-            android:tag="du" />
+            android:tag="du"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/deBtn"
             android:background="@drawable/de"
-            android:tag="de" />
+            android:tag="de"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/doBtn"
             android:background="@drawable/doo"
-            android:tag="do" />
+            android:tag="do"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/faBtn"
             android:background="@drawable/fa"
-            android:tag="fa" />
+            android:tag="fa"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/fiBtn"
             android:background="@drawable/fi"
-            android:tag="fi" />
+            android:tag="fi"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/fuBtn"
             android:background="@drawable/fu"
-            android:tag="fu" />
+            android:tag="fu"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/feBtn"
             android:background="@drawable/fe"
-            android:tag="fe" />
+            android:tag="fe"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/foBtn"
             android:background="@drawable/fo"
-            android:tag="fo" />
+            android:tag="fo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/gaBtn"
             android:background="@drawable/ga"
-            android:tag="ga" />
+            android:tag="ga"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/giBtn"
             android:background="@drawable/gi"
-            android:tag="gi" />
+            android:tag="gi"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/guBtn"
             android:background="@drawable/gu"
-            android:tag="gu" />
+            android:tag="gu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/geBtn"
             android:background="@drawable/ge"
-            android:tag="ge" />
+            android:tag="ge"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/goBtn"
             android:background="@drawable/go"
-            android:tag="go" />
+            android:tag="go"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/haBtn"
             android:background="@drawable/ha"
-            android:tag="ha" />
+            android:tag="ha"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/hiBtn"
             android:background="@drawable/hi"
-            android:tag="hi" />
+            android:tag="hi"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/huBtn"
             android:background="@drawable/hu"
-            android:tag="hu" />
+            android:tag="hu"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/heBtn"
             android:background="@drawable/he"
-            android:tag="he" />
+            android:tag="he"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/hoBtn"
             android:background="@drawable/ho"
-            android:tag="ho" />
+            android:tag="ho"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/jaBtn"
             android:background="@drawable/ja"
-            android:tag="ja" />
+            android:tag="ja"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/jiBtn"
             android:background="@drawable/ji"
-            android:tag="ji" />
+            android:tag="ji"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/juBtn"
             android:background="@drawable/ju"
-            android:tag="ju" />
+            android:tag="ju"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/jeBtn"
             android:background="@drawable/je"
-            android:tag="je" />
+            android:tag="je"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/joBtn"
             android:background="@drawable/jo"
-            android:tag="jo" />
+            android:tag="jo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/kaBtn"
             android:background="@drawable/ka"
-            android:tag="ka" />
+            android:tag="ka"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/kiBtn"
             android:background="@drawable/ki"
-            android:tag="ki" />
+            android:tag="ki"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/kuBtn"
             android:background="@drawable/ku"
-            android:tag="ku" />
+            android:tag="ku"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/keBtn"
             android:background="@drawable/ke"
-            android:tag="ke" />
+            android:tag="ke"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/koBtn"
             android:background="@drawable/ko"
-            android:tag="ko" />
+            android:tag="ko"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/laBtn"
             android:background="@drawable/la"
-            android:tag="la" />
+            android:tag="la"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/liBtn"
             android:background="@drawable/li"
-            android:tag="li" />
+            android:tag="li"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/luBtn"
             android:background="@drawable/lu"
-            android:tag="lu" />
+            android:tag="lu"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/leBtn"
             android:background="@drawable/le"
-            android:tag="le" />
+            android:tag="le"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/loBtn"
             android:background="@drawable/lo"
-            android:tag="lo" />
+            android:tag="lo"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/maBtn"
             android:background="@drawable/ma"
-            android:tag="ma" />
+            android:tag="ma"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/miBtn"
             android:background="@drawable/mi"
-            android:tag="mi" />
+            android:tag="mi"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/muBtn"
             android:background="@drawable/mu"
-            android:tag="mu" />
+            android:tag="mu"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/meBtn"
             android:background="@drawable/me"
-            android:tag="me" />
+            android:tag="me"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/moBtn"
             android:background="@drawable/mo"
-            android:tag="mo" />
+            android:tag="mo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/naBtn"
             android:background="@drawable/na"
-            android:tag="na" />
+            android:tag="na"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/niBtn"
             android:background="@drawable/ni"
-            android:tag="ni" />
+            android:tag="ni"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/nuBtn"
             android:background="@drawable/nu"
-            android:tag="nu" />
+            android:tag="nu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/neBtn"
             android:background="@drawable/ne"
-            android:tag="ne" />
+            android:tag="ne"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/noBtn"
             android:background="@drawable/no"
-            android:tag="no" />
+            android:tag="no"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/paBtn"
             android:background="@drawable/pa"
-            android:tag="pa" />
+            android:tag="pa"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/piBtn"
             android:background="@drawable/pi"
-            android:tag="pi" />
+            android:tag="pi"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/puBtn"
             android:background="@drawable/pu"
-            android:tag="pu" />
+            android:tag="pu"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/peBtn"
             android:background="@drawable/pe"
-            android:tag="pe" />
+            android:tag="pe"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/poBtn"
             android:background="@drawable/po"
-            android:tag="po" />
+            android:tag="po"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/raBtn"
             android:background="@drawable/ra"
-            android:tag="ra" />
+            android:tag="ra"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/riBtn"
             android:background="@drawable/ri"
-            android:tag="ri" />
+            android:tag="ri"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/ruBtn"
             android:background="@drawable/ru"
-            android:tag="ru" />
+            android:tag="ru"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/reBtn"
             android:background="@drawable/re"
-            android:tag="re" />
+            android:tag="re"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/roBtn"
             android:background="@drawable/ro"
-            android:tag="ro" />
+            android:tag="ro"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/saBtn"
             android:background="@drawable/sa"
-            android:tag="sa" />
+            android:tag="sa"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/siBtn"
             android:background="@drawable/si"
-            android:tag="si" />
+            android:tag="si"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/suBtn"
             android:background="@drawable/su"
-            android:tag="su" />
+            android:tag="su"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/seBtn"
             android:background="@drawable/se"
-            android:tag="se" />
+            android:tag="se"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/soBtn"
             android:background="@drawable/so"
-            android:tag="so" />
+            android:tag="so"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/taBtn"
             android:background="@drawable/ta"
-            android:tag="ta" />
+            android:tag="ta"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/tiBtn"
             android:background="@drawable/ti"
-            android:tag="ti" />
+            android:tag="ti"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/tuBtn"
             android:background="@drawable/tu"
-            android:tag="tu" />
+            android:tag="tu"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/teBtn"
             android:background="@drawable/te"
-            android:tag="te" />
+            android:tag="te"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/toBtn"
             android:background="@drawable/to"
-            android:tag="to" />
+            android:tag="to"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/zaBtn"
             android:background="@drawable/za"
-            android:tag="za" />
+            android:tag="za"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/ziBtn"
             android:background="@drawable/zi"
-            android:tag="zi" />
+            android:tag="zi"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/zuBtn"
             android:background="@drawable/zu"
-            android:tag="zu" />
+            android:tag="zu"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/zeBtn"
             android:background="@drawable/ze"
-            android:tag="ze" />
+            android:tag="ze"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/zoBtn"
             android:background="@drawable/zo"
-            android:tag="zo" />
+            android:tag="zo"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
 
 

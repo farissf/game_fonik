@@ -7,7 +7,8 @@
     android:numColumns="3"
     android:orientation="horizontal"
     android:visibility="visible"
-    tools:context=".KataActivity">
+    tools:context=".KataActivity"
+    android:fillViewport="true">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -22,258 +23,354 @@
         <Button
             android:id="@+id/pakuBtn"
             android:background="@drawable/paku"
-            android:tag="paku" />
+            android:tag="paku"
+            android:layout_gravity="left"/>
         <Button
             android:id="@+id/pianoBtn"
             android:background="@drawable/piano"
-            android:tag="piano" />
+            android:tag="piano"
+            android:layout_marginLeft="40dp"
+            />
 
         <Button
             android:id="@+id/pociBtn"
             android:background="@drawable/poci"
-            android:tag="poci" />
+            android:tag="poci"
+            android:layout_gravity="right"/>
         <Button
             android:id="@+id/pulpenBtn"
             android:background="@drawable/pulpen"
-            android:tag="pulpen" />
+            android:tag="pulpen"
+            android:layout_marginTop="40dp" />
 
         <Button
             android:id="@+id/pensilBtn"
             android:background="@drawable/pensil"
-            android:tag="piano" />
+            android:tag="piano"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/banBtn"
             android:background="@drawable/ban"
-            android:tag="ban" />
+            android:tag="ban"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/biolaBtn"
             android:background="@drawable/biola"
-            android:tag="biola" />
+            android:tag="biola"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/bukuBtn"
             android:background="@drawable/buku"
-            android:tag="buku" />
+            android:tag="buku"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/bebekBtn"
             android:background="@drawable/bebek"
-            android:tag="bebek" />
+            android:tag="bebek"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/botolBtn"
             android:background="@drawable/botol"
-            android:tag="botol" />
+            android:tag="botol"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/mataBtn"
             android:background="@drawable/mata"
-            android:tag="mata" />
+            android:tag="mata"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/mistarBtn"
             android:background="@drawable/mistar"
-            android:tag="mistar" />
+            android:tag="mistar"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/mutiaraBtn"
             android:background="@drawable/mutiara"
-            android:tag="mutiara" />
+            android:tag="mutiara"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/mejaBtn"
             android:background="@drawable/meja"
-            android:tag="meja" />
+            android:tag="meja"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/mobilBtn"
             android:background="@drawable/mobil"
-            android:tag="mobil" />
+            android:tag="mobil"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/nasiBtn"
             android:background="@drawable/nasi"
-            android:tag="nasi" />
+            android:tag="nasi"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/nenekBtn"
             android:background="@drawable/nenek"
-            android:tag="nenek" />
+            android:tag="nenek"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/tasBtn"
             android:background="@drawable/tas"
-            android:tag="tas" />
+            android:tag="tas"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/tikusBtn"
             android:background="@drawable/tikus"
-            android:tag="tikus" />
+            android:tag="tikus"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/tupaiBtn"
             android:background="@drawable/tupai"
-            android:tag="tupai" />
+            android:tag="tupai"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/tekoBtn"
             android:background="@drawable/teko"
-            android:tag="teko" />
+            android:tag="teko"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"
+            />
 
         <Button
             android:id="@+id/tokoBtn"
             android:background="@drawable/toko"
-            android:tag="toko" />
+            android:tag="toko"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/radioBtn"
             android:background="@drawable/radio"
-            android:tag="radio" />
+            android:tag="radio"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/rumahBtn"
             android:background="@drawable/rumah"
-            android:tag="rumah" />
+            android:tag="rumah"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/rotiBtn"
             android:background="@drawable/roti"
-            android:tag="roti" />
+            android:tag="roti"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/lautBtn"
             android:background="@drawable/laut"
-            android:tag="laut" />
+            android:tag="laut"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/lilinBtn"
             android:background="@drawable/lilin"
-            android:tag="lilin" />
+            android:tag="lilin"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/lebahBtn"
             android:background="@drawable/lebah"
-            android:tag="lebah" />
+            android:tag="lebah"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/loncengBtn"
             android:background="@drawable/lonceng"
-            android:tag="lonceng" />
+            android:tag="lonceng"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/sabunBtn"
             android:background="@drawable/sabun"
-            android:tag="sabun" />
+            android:tag="sabun"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/sikuBtn"
             android:background="@drawable/siku"
-            android:tag="siku" />
+            android:tag="siku"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/susuBtn"
             android:background="@drawable/susu"
-            android:tag="susu" />
+            android:tag="susu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/sekolahBtn"
             android:background="@drawable/sekolah"
-            android:tag="sekolah" />
+            android:tag="sekolah"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/gaunBtn"
             android:background="@drawable/gaun"
-            android:tag="gaun" />
+            android:tag="gaun"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/gitarBtn"
             android:background="@drawable/gitar"
-            android:tag="gitar" />
+            android:tag="gitar"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/gulaBtn"
             android:background="@drawable/gula"
-            android:tag="gula" />
+            android:tag="gula"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/gelasBtn"
             android:background="@drawable/gelas"
-            android:tag="gelas" />
+            android:tag="gelas"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/halteBtn"
+            android:layout_width="109dp"
             android:background="@drawable/halte"
-            android:tag="halte" />
+            android:tag="halte"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/hidungBtn"
             android:background="@drawable/hidung"
-            android:tag="hidung" />
+            android:tag="hidung"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/hutanBtn"
             android:background="@drawable/hutan"
-            android:tag="hutan" />
+            android:tag="hutan"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/helmBtn"
             android:background="@drawable/helm"
-            android:tag="helm" />
+            android:tag="helm"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/hotelBtn"
             android:background="@drawable/hotel"
-            android:tag="hotel" />
+            android:tag="hotel"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/jamBtn"
             android:background="@drawable/jam"
-            android:tag="jam" />
+            android:tag="jam"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/jilbabBtn"
             android:background="@drawable/jilbab"
-            android:tag="jilbab" />
+            android:tag="jilbab"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/kalengBtn"
             android:background="@drawable/kaleng"
-            android:tag="kaleng" />
+            android:tag="kaleng"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/kueBtn"
             android:background="@drawable/kue"
-            android:tag="kue" />
+            android:tag="kue"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/kertasBtn"
             android:background="@drawable/kertas"
-            android:tag="kertas" />
+            android:tag="kertas"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/kopiBtn"
             android:background="@drawable/kopi"
-            android:tag="kopi" />
+            android:tag="kopi"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/cabaiBtn"
             android:background="@drawable/cabai"
-            android:tag="cabai" />
+            android:tag="cabai"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/cincinBtn"
             android:background="@drawable/cincin"
-            android:tag="cincin" />
+            android:tag="cincin"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/cukaBtn"
             android:background="@drawable/cuka"
-            android:tag="cuka" />
+            android:tag="cuka"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/celanaBtn"
             android:background="@drawable/celana"
-            android:tag="celana" />
+            android:tag="celana"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/daduBtn"
             android:background="@drawable/dadu"
-            android:tag="dadu" />
+            android:tag="dadu"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/dipanBtn"
             android:background="@drawable/dipan"
-            android:tag="dipan" />
+            android:tag="dipan"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/duriBtn"
             android:background="@drawable/duri"
-            android:tag="duri" />
+            android:tag="duri"
+            android:layout_marginTop="40dp"/>
         <Button
             android:id="@+id/dombaBtn"
             android:background="@drawable/domba"
-            android:tag="domba" />
+            android:tag="domba"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"/>
 
         <Button
             android:id="@+id/wayangBtn"
             android:background="@drawable/wayang"
-            android:tag="wayang" />
+            android:tag="wayang"
+            android:layout_gravity="right"
+            android:layout_marginTop="40dp"/>
 
 
     </GridLayout>

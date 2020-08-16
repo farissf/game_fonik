@@ -11,7 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:fillViewport="true"
+        >
 
         <GridLayout
             android:layout_width="match_parent"
@@ -22,19 +24,25 @@
             android:gravity="center"
             android:horizontalSpacing="10dp"
             android:stretchMode="columnWidth"
-            android:verticalSpacing="5dp">
+            android:verticalSpacing="5dp"
+            >
 
             <Button
                 android:id="@+id/anjing"
-                android:background="@drawable/anjing" />
+                android:background="@drawable/anjing"
+                android:layout_gravity="left"/>
 
             <Button
                 android:id="@+id/ayam"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="40dp"
                 android:background="@drawable/ayam" />
 
             <Button
                 android:id="@+id/bebek"
-                android:background="@drawable/bebek" />
+                android:background="@drawable/bebek"
+                android:layout_gravity="right"/>
 
             <Button
                 android:id="@+id/elang"
@@ -42,11 +50,13 @@
 
             <Button
                 android:id="@+id/kambing"
-                android:background="@drawable/kambing" />
+                android:background="@drawable/kambing"
+                android:layout_marginLeft="40dp"/>
 
             <Button
                 android:id="@+id/katak"
-                android:background="@drawable/katak" />
+                android:background="@drawable/katak"
+                android:layout_gravity="right"/>
 
             <Button
                 android:id="@+id/kucing"
@@ -54,11 +64,13 @@
 
             <Button
                 android:id="@+id/kuda"
-                android:background="@drawable/kuda" />
+                android:background="@drawable/kuda"
+                android:layout_marginLeft="40dp"/>
 
             <Button
                 android:id="@+id/gajah"
-                android:background="@drawable/gajah" />
+                android:background="@drawable/gajah"
+                android:layout_gravity="right"/>
 
             <Button
                 android:id="@+id/monyet"
@@ -66,11 +78,13 @@
 
             <Button
                 android:id="@+id/sapi"
-                android:background="@drawable/sapi" />
+                android:background="@drawable/sapi"
+                android:layout_marginLeft="40dp"/>
 
             <Button
                 android:id="@+id/serigala"
-                android:background="@drawable/serigala" />
+                android:background="@drawable/serigala"
+                android:layout_gravity="right"/>
 
             <Button
                 android:id="@+id/ular"
@@ -78,7 +92,8 @@
 
             <Button
                 android:id="@+id/singa"
-                android:background="@drawable/singa" />
+                android:background="@drawable/singa"
+                android:layout_gravity="right"/>
 
         </GridLayout>
     </ScrollView>

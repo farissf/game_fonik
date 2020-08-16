@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:fillViewport="true">
 
         <GridLayout
             android:layout_width="match_parent"
@@ -30,23 +31,30 @@
 
             <Button
                 android:id="@+id/gitar"
-                android:background="@drawable/gitar" />
+                android:background="@drawable/gitar"
+                android:layout_marginLeft="40dp"/>
 
             <Button
                 android:id="@+id/bass"
-                android:background="@drawable/bass" />
+                android:background="@drawable/bass"
+                android:layout_gravity="right"/>
 
             <Button
                 android:id="@+id/flute"
-                android:background="@drawable/flute" />
+                android:background="@drawable/flute"
+                android:layout_marginTop="40dp"/>
 
             <Button
                 android:id="@+id/piano"
-                android:background="@drawable/piano" />
+                android:background="@drawable/piano"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"/>
 
             <Button
                 android:id="@+id/suling"
-                android:background="@drawable/suling" />
+                android:background="@drawable/suling"
+                android:layout_gravity="right"
+                android:layout_marginTop="40dp"/>
 
         </GridLayout>
     </ScrollView>
